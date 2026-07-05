@@ -1,1 +1,1 @@
-alert("Welcome to my first website!");
+function showMessage() { alert("Congratulations! You clicked the button."); }
