@@ -1,1 +1,1 @@
-function showMessage() { alert("Congratulations! You clicked the button."); }
+function showMessage() { alert("Thank you for visiting."); }
