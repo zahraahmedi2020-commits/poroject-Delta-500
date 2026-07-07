@@ -5,7 +5,7 @@ function Guess() {
                     let R;
                    
                    if (Number(n1.value)==a2){
-                      R='correct';
+                      R='correct! the number was '+ a2;
                       
                      }
                    else if(Number(n1.value)>a2){ 
@@ -19,4 +19,8 @@ function Guess() {
                        }
 
       heading.innerText= R;
+}
+function Reloadlocation(){  let n1= document.getElementById("a1"); 
+                            n1.value=' ';
+                            location.reload();
 }
