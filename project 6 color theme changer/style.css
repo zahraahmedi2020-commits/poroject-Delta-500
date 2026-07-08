@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#FFC0CB ;
+    text-align: center;
+    margin-top: 80px;
+}
+
+h1 {
+    color: #808000;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+}
+#blue{
+background-color:#0000FF ;
+}
+#green{
+background-color:#008000 ;
+}
+#yellow{
+background-color:#FFFF00 ;
+}
+#white{
+background-color:#FFFFFF ;
+}
+#black{
+background-color:#000000 ;
+}
