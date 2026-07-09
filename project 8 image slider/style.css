@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#FFC0CB ;
+    text-align: center;
+    margin-top: 80px;
+}
+
+h1 {
+    color: #f2f2f2;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+}
+.subimg {
+height:100px;
+width:100px;
+border: 1px solid #000;
+}
