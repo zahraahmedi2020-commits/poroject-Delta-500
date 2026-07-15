@@ -1,0 +1,29 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background-color:#FFFFFF ;
+    text-align: center;
+    margin-top: 80px;
+}
+
+h1 { 
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
+    color: #253342;
+display:inline;
+}
+
+#dadd{
+display:none;
+}
+#dshow{
+display:none;
+}
+#ddelet{
+display:none;
+}
+#dsearch{
+display:none;
+}
+#daverage{
+display:none;
+}

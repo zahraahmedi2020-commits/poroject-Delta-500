@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Management Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="body">
+<h1 id="heading"> Management Students </h1><br></br>
+<button id="add" type="button"  onclick="adds()">Add Student </button>    
+<button id="show" type="button"  onclick="shows()">Show All Students </button>
+<button id="delet" type="button"  onclick="delets()">Delet Student </button>
+<button id="search" type="button"  onclick="searchs()">Search Student </button>
+<button id="average" type="button"  onclick="average()">Average Score </button></br></br></div>
+
+<div id="dadd">
+<h1 id="heading">Add Student </h1></br></br>
+Name:     <input type="text" autocomplete="off" id="inputn"></br>
+Family:   <input type="text" autocomplete="off" id="inputf"></br>
+age:      <input type="text" autocomplete="off" id="inputag"></br>
+Score:    <input type="text" autocomplete="off" id="inputsc"></br></br></br>   
+<button id="save" type="button"  onclick="saves()">Save </button></br></br></br></div>
+
+<div id="dshow">
+<h1 id="heading">Show Students </h1><br></br>
+<div id="result"></div>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button></div>
+   
+<div id="ddelet">
+<h1 id="heading"> Delete Student whith Id </h1><br></br>
+Id student: <input type="text" id="dids" autocomplete="off" ></br></br>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button>
+<button id="delet" type="button"  onclick="finddelets()">Delet </button></br></div>
+
+<div id="dsearch">
+ <h1 id="heading"> Search Student whith Id </h1><br></br>
+Id student: <input type="text" id="sids" autocomplete="off" ></br></br>
+<div id="rsearch"></div>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button>
+<button id="search" type="button"  onclick="finds()">Search </button></br>
+</div>
+
+<div id="daverage">
+<h1 id="heading">Average Score Students </h1><br></br></br></br>
+Score:<h1 id="hsc">  </h1> </br>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button></div>
+
+ <script src="script.js"></script>
+     
+</body>
+</html>
