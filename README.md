@@ -1,30 +1,70 @@
-# Project Delta-500
+# 🚀 Delta-500
 
-A personal learning journey to become a Remote Software and Network Automation Engineer.
+## About Me
 
-## Goals
+Hello! I'm a Network Engineer with 3 years of experience.
+Currently, I am learning JavaScript and building practical projects to improve my programming skills.
 
-- Learn Git and GitHub
-- Learn HTML, CSS and JavaScript
-- Build practical projects
-- Learn Python for Network Automation
-- Build a professional GitHub portfolio
+---
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+
+---
 
 ## Completed Projects
 
-- HTML & CSS Basics
-- Calculator
-- Number Guess Game
-- To-Do List
-- Digital Clock
-- Color Theme Changer
+| No | Project | Status |
+|----|---------|--------|
+| 1 | Project 1 | ✅ |
+| 2 | Project 2 | ✅ |
+| 3 | Project 3 | ✅ |
+| 4 | Project 4 | ✅ |
+| 5 | Project 5 | ✅ |
+| 6 | Project 6 | ✅ |
+| 7 | Project 7 | ✅ |
+| 8 | Project 8 | ✅ |
+| 9 | Quiz App | ✅ |
+| 10 | Student Management System | ✅ |
 
-## Next Projects
+---
 
-- Notes App
-- Image Slider
-- Quiz App
+## Upcoming Projects
 
-## Author
+- 📚 Book Manager
+- ✅ To-Do List Manager
+- 👨‍💼 Employee Manager
+- 📖 Library System
+- 🛒 Shopping Cart
+- 📇 Contact Manager
 
-Zahra Ahmadi
+---
+
+## Skills Learned
+
+- Variables
+- Conditions
+- Loops
+- Functions
+- Arrays
+- Objects
+- DOM Manipulation
+- createElement()
+- appendChild()
+- Event Handling
+- Git & GitHub
+
+---
+
+## Goal
+
+Build real-world JavaScript projects and prepare for Front-End Development.
+
+---
+
+⭐ Project Delta-500
