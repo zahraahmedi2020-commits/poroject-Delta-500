@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>To DO List Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="body">
+<br><br><h1 id="heading">TO DO List Manager</h1><br></br>
+<button id="add" type="button"  onclick="addDO()">Add New DO </button>    
+<button id="show" type="button"  onclick="showDO()">Show All DOs </button>
+<button id="search" type="button"  onclick="searchDO()">Search DO By Title or ID</button></br></br>
+</div>
+<div id="addDO" class="container">
+<h1 id="heading"> Add New Book </h1></br></br>
+<div class="DO-form">
+Title DO: <input type="text" autocomplete="off" id="inputTDO"></br> </br> 
+<button id="save" type="button"  onclick="saveDO()">Save </button></br></br>
+</div></div>
+<div id="showDO">
+<h1 id="heading">Show All DOs </h1><br></br>
+<div id="result"></div></br>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button></br></br></div></div>
+   
+<div id="searchDO">
+ <h1 id="heading"> Search DO whith Id </h1><br></br>
+<div class="DO-form">
+ Title DO: <input type="text" id="stiDO" autocomplete="off" ></br></br>
+ ID    DO:    <input type="text" id="sidDO" autocomplete="off" ></br></br></div>
+<div id="rsearch"></div>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button>
+<button id="search" type="button"  onclick="findDO()">Search </button></br></br>
+</div>
+
+ <script src="script.js"></script>
+     
+</body>
+</html>

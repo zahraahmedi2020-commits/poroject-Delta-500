@@ -35,7 +35,7 @@ document.getElementById("body").style.display="block";}
 function shows(){
 document.getElementById("body").style.display="none";
 document.getElementById("dshow").style.display="block";   
-let bshow=document.getElementById("bodyshow");
+
 if(students.length==0){
     alert("no student show");
     document.getElementById("dshow").style.display="none";

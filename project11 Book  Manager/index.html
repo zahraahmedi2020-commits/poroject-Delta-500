@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Book Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="body">
+<br><br><h1 id="heading">Book Manager</h1><br></br>
+<button id="add" type="button"  onclick="addb()">Add Book </button>    
+<button id="show" type="button"  onclick="showb()">Show All Books </button>
+<button id="delet" type="button"  onclick="deletb()">Deleted Book </button>
+<button id="search" type="button"  onclick="searchb()">Search Book  </button>
+<button id="average" type="button"  onclick="avgPrice()">Average Price </button></br></br></div>
+<div id="addb" class="container">
+<h1 id="heading"> Add New Book </h1></br></br>
+<div class="book-form">
+Title Book: <input type="text" autocomplete="off" id="inputTb"></br>
+auther: <input type="text" autocomplete="off" id="inputAub"></br>
+price:<input type="text" autocomplete="off" id="inputP"></br></br>  
+<button id="save" type="button"  onclick="saveb()">Save </button></br></br></div></div>
+<div id="showb">
+<h1 id="heading">Show Books </h1><br></br>
+<div id="result"></div>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button></br></br></div></div>
+   
+<div id="deletb">
+<h1 id="heading"> Deleted Book by Id or title </h1><br></br>
+
+ID Book: <input type="text" id="didb" autocomplete="off" ></br></br>
+
+<button id="main" type="button"  onclick="mainmenu()">main menu</button>
+<button id="delet" type="button"  onclick="finddeletb()">Delet </button></br></br></div>
+
+<div id="searchb">
+ <h1 id="heading"> Search Book whith Id </h1><br></br>
+<div class="book-form">
+ Title Book: <input type="text" id="stib" autocomplete="off" ></br></br>
+ ID    Book:    <input type="text" id="sidb" autocomplete="off" ></br></br></div>
+<div id="rsearch"></div>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button>
+<button id="search" type="button"  onclick="findb()">Search </button></br></br>
+</div>
+
+<div id="averageP">
+<h1 id="heading">Average Score Students </h1><br></br>
+Average Price:<h1 id="havgp">  </h1> </br></br>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button></br></br>
+</div>
+
+ <script src="script.js"></script>
+     
+</body>
+</html>
