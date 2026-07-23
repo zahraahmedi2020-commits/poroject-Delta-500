@@ -5,13 +5,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="body">
+
+    <div id="body">
 <h1 id="heading"> Management Students </h1><br></br>
 <button id="add" type="button"  onclick="adds()">Add Student </button>    
 <button id="show" type="button"  onclick="shows()">Show All Students </button>
 <button id="delet" type="button"  onclick="delets()">Delet Student </button>
 <button id="search" type="button"  onclick="searchs()">Search Student by ID|Name</button>
-<button id="edit" type="button"  onclick="edit()">Edit Student </button>
+<button id="edit" type="button"  onclick="findedit()">Edit Student </button>
 <br><button id="changeSc" type="button"  onclick="changesc()">Change Score </button>
 <button id="average" type="button"  onclick="average()">Average Score </button>
 <button id="maxsc" type="button"  onclick="maxsc()">Max Score </button>
@@ -21,12 +22,12 @@
 
 <div id="dadd">
 <h1 id="headingform">Add Student </h1></br></br><dive class="student-form">
-Full Name:     <input type="text" autocomplete="off" id="inputn"></br>
-age:      <input type="text" autocomplete="off" id="inputag"></br>
-Score:    <input type="text" autocomplete="off" id="inputsc"></br></br></br>   
-Major:   <input type="text" autocomplete="off" id="inputma"></br>
-<button id="save" type="button"  onclick="saves()">Save </button></br>
-<button id="update" type="button"   onclick="update()">Update </button></br></br></div></div>
+Full Name:<input type="text" autocomplete="off" id="inputn" required><br>
+age: <input type="number" min="7" max="60" required autocomplete="off" id="inputag"><br>
+Score: <input type="number" min="0" max="20" autocomplete="off" id="inputsc"><br>  
+Major: <input type="text" autocomplete="off" id="inputma"><br>
+<button id="save" type="button"  onclick="saves()">Save </button><br>
+<button id="update" type="button"   onclick="updates(editindex)">Update </button><br></div></div>
 
 <div id="dshow">
 <h1 id="heading">Show Students </h1><br></br>
@@ -34,15 +35,19 @@ Major:   <input type="text" autocomplete="off" id="inputma"></br>
 <button id="main" type="button"  onclick="mainmenu()">main menu</button></div>
    
 <div id="ddelet">
-<h1 id="heading"> Delete Student whith Id </h1><br></br>
+<h1 id="headingd"> Delete Student whith Id </h1><br></br>
+<div class="student-form">
 Id student: <input type="text" id="dids" autocomplete="off" ></br></br>
-<button id="delet" type="button"  onclick="finddelets()">Delet </button></br></div>
+<button id="bdelet" type="button"  onclick="finddelets()">Delet </button></br>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button>
+</div>
+</div>
 
 <div id="dsearch">
  <h1 id="heading"> Search Student whith Id </h1><br></br>
 <dive class="student-form">
  Id student: <input type="text" id="sids" autocomplete="off" ></br></br>
-Full Name student: <input type="text" id="sns" autocomplete="off" ></br></br>
+ Full Name student: <input type="text" id="sns" autocomplete="off" ></br></br>
 <div id="rsearch"></div>
 <button id="main" type="button"  onclick="mainmenu()">main menu</button>
 <button id="search" type="button"  onclick="finds()">Search </button></br></dive>
@@ -63,19 +68,20 @@ Score: <input type="text" id="chscs" autocomplete="off" ></br></br>
 Score:<h1 id="hsc">  </h1> </br>
 <button id="main" type="button"  onclick="mainmenu()">main menu</button></div>
 
-<div id="dmaxscore">
+<div id="dmax">
  <h1 id="heading"> Max Score Students </h1><br></br>
 Max Score:<h1 id="hmaxsc">  </h1> </br>
 <button id="main" type="button"  onclick="mainmenu()">main menu</button>
 </div>
-<div id="dminscore">
+<div id="dmin">
  <h1 id="headingmax"> MMin Score Students </h1><br></br>
-Min Score:<h1 id="minsc">  </h1> </br>
+Min Score:<h1 id="hminsc">  </h1> </br>
 <button id="main" type="button"  onclick="mainmenu()">main menu</button>
 </div>
 <div id="dsorte">
 <h1 id="headin"> sort Score Students </h1><br></br>
-<div id="sortesc">  </div> </br>
+<button id="Ase" type="button"  onclick="Asec()">Asec</button>
+<button id="Des" type="button"  onclick="Desc()">Desc</button></br>
 <button id="main" type="button"  onclick="mainmenu()">main menu</button></div>
    
  <script src="script.js"></script>

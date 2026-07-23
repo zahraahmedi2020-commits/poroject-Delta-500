@@ -37,10 +37,10 @@ display:none;
 #dchangesc{
 display:none;
 }
-#dmaxscore{
+#dmax{
     display: none;
 }
-#dminscore{
+#dmin{
     display: none;
 }
 #dsorte{
@@ -51,4 +51,11 @@ display:none;
 }
 #chscs{
     display: none;
+}
+.noedit{
+     grid-template-columns: 120px 250px;
+    gap:10px;
+    margin: 0 auto;
+    width: fit-content;
+    background-origin: padding-box;
 }
