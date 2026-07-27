@@ -1,0 +1,16 @@
+#فایل های نصبی
+*exe.
+*msi.
+*rar.
+*zip.
+*7z.
+*iso.
+ #پوشه های حجیم
+/software
+/node_modules
+#فایل هلی موقت
+log.
+
+#فایل های سیستم 
+DS_Store.
+Thumbs.db
