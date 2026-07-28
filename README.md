@@ -31,7 +31,13 @@ Currently, I am learning JavaScript and building practical projects to improve m
 | 8 | Project 8 | ✅ |
 | 9 | Quiz App | ✅ |
 | 10 | Student Management System | ✅ |
-
+Projects 10-15
+10 Student Manager | ✅ |
+11 Book Manager| ✅ |
+12 ToDo List| ✅ |
+13 Student Manager Pro| ✅ |
+14 Notes Manager progress.| ✅ |
+15 NODES MANAGER 
 ---
 
 ## Upcoming Projects
@@ -60,10 +66,15 @@ Currently, I am learning JavaScript and building practical projects to improve m
 - Git & GitHub
 
 ---
+#Roadmap
+JavaScript -> React -> Python -> Network Automation -> Linux -> Docker -> AWS -> Terraform
+#Project 15 Mission
+Finish Notes Manager with filtering, sorting, modular code and portfolio quality.
+#Technical Resume
+MSc Networking, 3 years Network Engineer, Cisco, MikroTik, VMware, Windows Server, Linux, Git, JavaScript, Python learning.
+Conclusion
+Continue toward Cloud & Network Automation Engineer.
 
-## Goal
-
-Build real-world JavaScript projects and prepare for Front-End Development.
 
 ---
 
