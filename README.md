@@ -32,50 +32,161 @@ Currently, I am learning JavaScript and building practical projects to improve m
 | 9 | Quiz App | ✅ |
 | 10 | Student Management System | ✅ |
 Projects 10-15
-10 Student Manager | ✅ |
-11 Book Manager| ✅ |
-12 ToDo List| ✅ |
-13 Student Manager Pro| ✅ |
-14 Notes Manager progress.| ✅ |
-15 NODES MANAGER 
+| 10 | Student Manager | ✅ |
+| 11 | Book Manager| ✅ |
+| 12 | ToDo List| ✅ |
+| 13 | Student Manager Pro| ✅ |
+| 14 | Notes Manager progress.| ✅ |
+| 15 | NODES MANAGER 
 ---
+## Overview
+Project Delta-500 is my personal learning and portfolio journey toward becoming a Cloud & Network Automation Engineer.
 
-## Upcoming Projects
-
-- 📚 Book Manager
-- ✅ To-Do List Manager
-- 👨‍💼 Employee Manager
-- 📖 Library System
-- 🛒 Shopping Cart
-- 📇 Contact Manager
+This repository contains practical projects developed to improve my programming, problem-solving, and software engineering skills.
 
 ---
 
-## Skills Learned
+## Objectives
 
-- Variables
-- Conditions
-- Loops
-- Functions
+- Build a professional programming portfolio
+- Master JavaScript fundamentals
+- Learn Git & GitHub workflow
+- Continue with React
+- Learn Python for Automation
+- Develop Network Automation projects
+- Prepare for Remote and Freelance opportunities
+
+---
+
+## Completed Projects
+
+### Project 9
+Quiz Application
+
+**Skills**
 - Arrays
-- Objects
 - DOM Manipulation
-- createElement()
-- appendChild()
-- Event Handling
-- Git & GitHub
-
----
-#Roadmap
-JavaScript -> React -> Python -> Network Automation -> Linux -> Docker -> AWS -> Terraform
-#Project 15 Mission
-Finish Notes Manager with filtering, sorting, modular code and portfolio quality.
-#Technical Resume
-MSc Networking, 3 years Network Engineer, Cisco, MikroTik, VMware, Windows Server, Linux, Git, JavaScript, Python learning.
-Conclusion
-Continue toward Cloud & Network Automation Engineer.
-
+- Events
+- Score Calculation
 
 ---
 
-⭐ Project Delta-500
+### Project 10
+Student Manager
+
+**Skills**
+- CRUD Operations
+- Search
+- Average Score
+- JavaScript Objects
+
+---
+
+### Project 11
+Book Manager
+
+**Skills**
+- Object Management
+- Dynamic UI
+- JavaScript Functions
+
+---
+
+### Project 12
+ToDo List
+
+**Skills**
+- Dynamic DOM
+- LocalStorage
+- Delete Tasks
+- Status Management
+
+---
+
+### Project 13
+Student Manager Pro
+
+**Features**
+- Add Student
+- Edit Student
+- Delete Student
+- Search
+- Sort
+- Max / Min Score
+- Average Score
+
+---
+
+### Project 14
+Notes Manager
+
+Current Features
+
+- Add Notes
+- Show All Notes
+- Delete Notes
+- LocalStorage
+
+Upcoming
+
+- Filter
+- Sorting
+- Search
+- Better UI
+
+---
+
+## Current Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+- VS Code
+
+Learning
+
+- React
+- Python
+- Linux
+- Docker
+- Network Automation
+- AWS
+- Terraform
+
+---
+
+## Roadmap
+
+✔ HTML
+
+✔ CSS
+
+✔ JavaScript Fundamentals
+
+⬜ Advanced JavaScript
+
+⬜ React
+
+⬜ Python
+
+⬜ Network Automation
+
+⬜ Docker
+
+⬜ AWS
+
+⬜ Terraform
+
+⬜ Cloud & Network Automation Engineer
+
+---
+
+## Author
+
+Network Engineer
+
+M.Sc. in Networking
+
+Project Delta-500
