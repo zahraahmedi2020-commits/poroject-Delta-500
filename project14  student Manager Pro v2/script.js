@@ -1,4 +1,4 @@
-var currentIndex = 0
+
 let score=0;
 let students =JSON.parse(localStorage.getItem("students"))||[];
 let editindex=-1;
@@ -8,6 +8,13 @@ function emptys(){
           mainmenu();
         }
 }
+function removeall(){
+ if(confirm("Are you sure you went to delet all students?")){
+ localStorage.removeItem("students");
+ students=[];
+ shows();}
+}
+
 function mainmenu(){
 document.getElementById("body").style.display="block";
 document.getElementById("dshow").style.display="none";
@@ -32,32 +39,60 @@ function adds(){
       document.getElementById("body").style.display="none";
       document.getElementById("dadd").style.display="block";}
 function saves(){
-    
+    let id= 1;
+  if(students.length>0){
+     id=Math.max(...students.map(item=>item.ids))+1;
       let n=document.getElementById("inputn");
-      id=currentIndex+1;
      let ag=document.getElementById("inputag");
      let sc=document.getElementById("inputsc");
      let m=document.getElementById("inputma");
      if(n.value.trim()==""){
-        alert("name is required");
-        return;
+          alert("name is required");
+         return;
      }else{
-        if(sc.value<0||sc.value>20){
-            alert("score must be between 0 and 20");
-            return;
+         if(sc.value<0||sc.value>20){
+             alert("score must be between 0 and 20");
+              return;
         }else{
               let student={fullname:n.value,ids:id,age:ag.value,score:sc.value,major:m.value};
-     students.push(student);
-     localStorage.setItem("students",JSON.stringify(students));
-     currentIndex++;
+             students.push(student);
+             localStorage.setItem("students",JSON.stringify(students));
+             alert("student save successfully"+localStorage.getItem("students"));
+             n.value="";
+             m.value="";
+             ag.value=0;
+             sc.value=0;
+             document.getElementById("dadd").style.display="none";
+             document.getElementById("body").style.display="block";
+            }
+
+        }
+     }else{
      
-     alert("student save successfully"+localStorage.getItem("students"));
-     n.value="";
-     m.value="";
-     ag.value=0;
-     sc.value=0;
-    document.getElementById("dadd").style.display="none";
-     document.getElementById("body").style.display="block";
+     let n=document.getElementById("inputn");
+     let ag=document.getElementById("inputag");
+     let sc=document.getElementById("inputsc");
+     let m=document.getElementById("inputma");
+     if(n.value.trim()==""){
+          alert("name is required");
+         return;
+     }else{
+         if(sc.value<0||sc.value>20){
+             alert("score must be between 0 and 20");
+              return;
+        }else{
+              let student={fullname:n.value,ids:id,age:ag.value,score:sc.value,major:m.value};
+             students.push(student);
+             localStorage.setItem("students",JSON.stringify(students));
+             alert("student save successfully"+localStorage.getItem("students"));
+             n.value="";
+             m.value="";
+             ag.value=0;
+             sc.value=0;
+             document.getElementById("dadd").style.display="none";
+             document.getElementById("body").style.display="block";
+            }
+
         }
      }
      }
@@ -85,12 +120,13 @@ function finddelets(){
          let found=false;
             for(let i=0; i<students.length; i++){  
                 if(students[i].ids==id){
+                    if(confirm("Are you sure you went to delet this student?")){
                      students.splice(i,1);  
                       localStorage.setItem("students",JSON.stringify(students));
                      found = true;
                      alert("student Deleted");
                      document.getElementById("ddelet").style.display="none";
-                     document.getElementById("body").style.display="block";
+                     document.getElementById("body").style.display="block";}
                 }
              }if(!found)alert("not fund student whtih this ID .");
        }
@@ -112,6 +148,7 @@ function searchs(){
                         break;  
                     }
              }if(!found)alert("not fund student whtih this ID .");
+         
       }
      
 function average(){
@@ -129,6 +166,7 @@ function average(){
 function findedit(){
      document.getElementById("body").style.display="none";
      document.getElementById("ddelet").style.display="block";
+     document.getElementById("all").style.display="none";
      document.getElementById("headingd").innerHTML="edit Student whith Id ";
      let bs=document.getElementById("bdelet");
      bs.innerText="search";
@@ -155,8 +193,10 @@ function edit(){
               ainput.value= students[editindex].age;
               scinput.value= students[editindex].score;
               mainput.value= students[editindex].major;
-              found=true;}}
+              found=true;}
+            }if(!found)alert("not fund student whtih this ID .");
               
+
             }
 
   function updates(editindex){
@@ -199,7 +239,7 @@ function findsc(){
                     break;
                     }
              }if(!found)alert("not fund student whtih this ID .");
-       
+      
 }
 function updatesc(editindex){
   let sc=document.getElementById("chscs").value;
@@ -242,7 +282,6 @@ function maxsc(){
   function Asec(){
  document.getElementById("body").style.display="none";
      document.getElementById("dsorte").style.display="block";
-     let r=document.getElementById("sortesc");
      let m=Number(students[0].score);
        emptys();
     for(let i=0;i<students.length;i++){
@@ -258,7 +297,6 @@ function maxsc(){
 function Desc(){
 document.getElementById("body").style.display="none";
      document.getElementById("dsorte").style.display="block";
-     let r=document.getElementById("sortesc");
      let m=Number(students[0].score);
      emptys();
     for(let i=0;i<students.length;i++){

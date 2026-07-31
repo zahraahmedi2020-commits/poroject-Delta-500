@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes Maneger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="base">
+<h1 id="heading">  Nodes Manager </h1><br></br>
+<button id="add" type="button"  onclick="addn()">Add  </button>    
+<button id="show" type="button"  onclick="shown()">Show All Nodes </button>
+<button id="search" type="button"  onclick="searchn()">Search Node by ID|Subject</button>
+<button id="edit" type="button"  onclick="findeditn()">Edit Node </button>
+</br></br></div>
+
+<div id="dshow">
+<h1 id="heading">Show Nodes </h1><br></br>
+
+<select id="sort" onchange="sortn(this.value)">
+    <option value="">select sort</option>
+    <option value="1" >Sort Id Ascending</option>
+    <option value="2" >Sort Id Descending</option>
+    <option value="3" >Sort subject A to Z</option>
+    <option value="4" >Sort subject Z to A</option>
+</select>  filter Subject:<input id="fs" oninput="filters()">
+<div id="result"></div><br>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button></div>
+   
+<div id="dadd">
+<p> New Notes: </p><br>
+ 
+ <dive class="Node-form">
+  New Subject:<input type="text" name="invalue1" id='inputs'><br>
+  New Texe:  <input type="text" name="invalue1" id='inputt'><br><br>
+  <button id="save" type="button"  onclick="saven()">Save </button><br>
+<button id="update" type="button"   onclick="updates(editindex)">Update </button><br>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button>
+ </dive>
+</div>
+   
+<div id="dsearch">
+ <h1 id="heading"> Search Node whith Id or Subject</h1><br></br>
+<dive class="Node-form">
+ Id Node: <input type="text" id="sidn" autocomplete="off" ></br></br>
+ Subject: <input type="text" id="ssub" autocomplete="off" ></br></br>
+<div id="rsearch"></div>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button>
+<button id="search" type="button"  onclick="findn()">Search </button></br></dive>
+</div>
+
+<div id="dedit">
+ <h1 id="heading"> Edit Node </h1><br></br>
+<dive class="Node-form">
+ Id Node: <input type="text" id="eidn" autocomplete="off" ></br></br>
+<div id="redit"></div>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button>
+<button id="search" type="button"  onclick="edit()">Search </button></br></dive>
+</div>
+     <script src="script.js"></script>
+     
+</body>
+</html>
