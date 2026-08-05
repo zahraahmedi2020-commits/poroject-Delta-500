@@ -61,6 +61,83 @@ This repository contains practical projects developed to improve my programming,
 ---
 
 ## Completed Projects
+# 🧮 Project 01 - Simple Calculator
+
+A simple calculator application built with HTML, CSS, and Vanilla JavaScript.
+
+## Features
+
+- Basic arithmetic operations
+- Responsive interface
+- Keyboard-friendly design
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+## What I Learned
+
+- Variables
+- Functions
+- Events
+- DOM Manipulation
+
+## Project Status
+
+✅ Completed
+# ⏰ Project 02 - Digital Clock
+
+A real-time digital clock using JavaScript.
+
+## Features
+
+- Live time update
+- Automatic refresh every second
+- Clean UI
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+## What I Learned
+
+- Date Object
+- setInterval()
+- DOM Updates
+
+## Project Status
+
+✅ Completed
+
+# 🔢 Project 03 - Counter App
+
+A simple counter application.
+
+## Features
+
+- Increase
+- Decrease
+- Reset
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+## What I Learned
+
+- Event Listeners
+- State Management
+- DOM Manipulation
+
+## Project Status
+
+✅ Completed
 
 # ⚖️ Project 04 - BMI Calculator
 
