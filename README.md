@@ -35,10 +35,11 @@ Projects 10-15
 | 10 | Student Manager | ✅ |
 | 11 | Book Manager| ✅ |
 | 12 | ToDo List| ✅ |
-| 13 | Student Manager Pro| ✅ |
-| 14 | .| ✅ |
+| 13 | Student Manager | ✅ |
+| 14 | Student Manager Pro.| ✅ |
 | 15 | Notes Manager .| ✅ |
 | 16 | Notes Manager Pro.| ✅ |
+| 17 |  .| |
 ---
 ## Overview
 Project Delta-500 is my personal learning and portfolio journey toward becoming a Cloud & Network Automation Engineer.
@@ -61,6 +62,102 @@ This repository contains practical projects developed to improve my programming,
 
 ## Completed Projects
 
+# ⚖️ Project 04 - BMI Calculator
+
+Calculate Body Mass Index.
+
+## Features
+
+- BMI Calculation
+- Result Categories
+- Validation
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+## What I Learned
+
+- User Input
+- Conditions
+- Form Validation
+
+## Project Status
+
+✅ Completed
+# 💬 Project 05 - Random Quote Generator
+
+Display random inspirational quotes.
+
+## Features
+
+- Random Quotes
+- Dynamic Updates
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+## What I Learned
+
+- Arrays
+- Random Selection
+- Event Handling
+
+## Project Status
+
+✅ Completed
+# 🎨 Project 06 - Color Generator
+
+Generate random colors.
+
+## Features
+
+- Random HEX Colors
+- Copy Color Code
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+## What I Learned
+
+- Random Numbers
+- String Manipulation
+
+## Project Status
+
+✅ Completed
+
+# 🔐 Project 07 - Password Generator
+
+Generate secure random passwords.
+
+## Features
+
+- Custom Password Length
+- Random Characters
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+## What I Learned
+
+- Loops
+- Random Functions
+
+## Project Status
+
+✅ Completed
 # ✅ Project 08 - To-Do List
 
 A task management application.
