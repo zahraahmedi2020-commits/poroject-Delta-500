@@ -135,7 +135,33 @@ Upcoming
 - Better UI
 
 ---
+# 📚 Project 15 - Student and Notes Practice
 
+Practice project combining previous concepts.
+
+## Features
+
+- CRUD
+- Search
+- Filter
+- Sort
+- Local Storage
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+## What I Learned
+
+- Project Structure
+- Debugging
+- Refactoring
+
+## Project Status
+
+✅ Completed
 ## Current Tech Stack
 
 - HTML5
