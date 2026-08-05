@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Knowlege Manager Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="base">
+<h1 id="heading">  notes Manager </h1><br></br>
+<button id="add" type="button"  onclick="addn()">Add  </button>   
+<button id="edit" type="button"  onclick="findedit()">Edit</button> 
+<button id="search" type="button"  onclick="deleten()">Deleted</button>
+<button id="show" type="button"  onclick="shown()">Show  </button></div>
+</br></br></div>
+
+<div id="dadd">
+<p> New Notes: </p><br>
+ 
+ <dive class="Note-forme">
+  New Title:<input type="text"  id='inputs' required><br><br>
+  New Texe:  <input type="text"  id='inputt'><br><br>
+  Tags:  <input type="text"  id='inputtag'><br><br>
+  <button id="save" type="button"  onclick="saven()">Save </button><br>
+  <button id="update" type="button"   onclick="updateedit(editindex)">Update </button><br>
+ <button id="main" type="button"  onclick="mainmenu()">main menu</button> 
+</dive>
+</div>
+ 
+<div id="dedit">
+ <h1 id="headinge"> Edit Node </h1><br></br>
+<dive class="Note-forme">
+ Id note: <input type="text" id="eidn" autocomplete="off" ></br></br>
+<div id="redite"></div>
+<button id="searche" type="button"  onclick="editn()">Search </button>
+<button id="del" type="button"  onclick="findd()">Delete </button>
+<button id="dela" type="button"  onclick="deleteall()">Deleted All </button>
+<button id="main" type="button"  onclick="mainmenu()">main menu</button>
+
+</dive>
+</div>
+
+<div id="dshow">
+<h1 id="heading">Show notes </h1><br></br>
+Counter notes:<hl id="counter"></hl><br><br>
+<select id="searchn" onchange="searchn(this.value)">
+    <option value="">select option search</option>
+    <option value="title" >Title</option>
+    <option value="texe" >Texe</option>
+     </select> 
+<select id="sort" onchange="sortn(this.value)">
+    <option value="">select sort</option>
+    <option value="1" >ID</option>
+    <option value="2" >Subject</option>
+    <option value="3" >Date Creat</option>
+    <option value="4" >ID Ascending</option>
+    <option value="5">ID Descending</option>
+</select>
+<select id="Filtern" onchange="filtern(this.value)">
+    <option value="">select option filter</option>
+    <option value="1" >pinned notes only</option>
+    <option value="tags" >only notes whith specific tags</option>
+    </select> 
+ <div id="dsearch"><h3 id="headingshow">Search note</h3>
+    <input  id="inputtype" oninput="searchNotes(this.value)">
+ </div><br>
+  <div id="result"></div><br>  
+  <button id="main" type="button"  onclick="mainmenu()">main menu</button>
+</div>
+   
+     <script src="script.js"></script>
+     
+</body>
+</html>

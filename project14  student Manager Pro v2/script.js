@@ -128,7 +128,7 @@ function finddelets(){
                      document.getElementById("ddelet").style.display="none";
                      document.getElementById("body").style.display="block";}
                 }
-             }if(!found)alert("not fund student whtih this ID .");
+             }if(!found)alert("not found student whtih this ID .");
        }
 
 function searchs(){
@@ -147,7 +147,7 @@ function searchs(){
                         found=true; 
                         break;  
                     }
-             }if(!found)alert("not fund student whtih this ID .");
+             }if(!found)alert("not found student whtih this ID .");
          
       }
      
@@ -194,9 +194,7 @@ function edit(){
               scinput.value= students[editindex].score;
               mainput.value= students[editindex].major;
               found=true;}
-            }if(!found)alert("not fund student whtih this ID .");
-              
-
+            }if(!found)alert("not found student whtih this ID .");
             }
 
   function updates(editindex){
@@ -238,7 +236,7 @@ function findsc(){
                     found=true; 
                     break;
                     }
-             }if(!found)alert("not fund student whtih this ID .");
+             }if(!found)alert("not found student whtih this ID .");
       
 }
 function updatesc(editindex){

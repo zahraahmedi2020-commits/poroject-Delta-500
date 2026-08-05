@@ -1,9 +1,9 @@
-let nodes =JSON.parse(localStorage.getItem("nodes"))||[];
+let notes =JSON.parse(localStorage.getItem("notes"))||[];
 
 let editindex=-1;
 function empty(){
-  if(nodes.length==0){
-    alert("not exist Nodes ");
+  if(notes.length==0){
+    alert("not exist notes ");
     mainmenu();
   }
 }
@@ -28,18 +28,18 @@ function addn(){
 
 function saven(){ 
   let id= 1;
-  if(nodes.length>0){
-    id=Math.max(...nodes.map(item=>item.idn))+1;
+  if(notes.length>0){
+    id=Math.max(...notes.map(item=>item.idn))+1;
    let sn=document.getElementById("inputs");
    let tn=document.getElementById("inputt");
     if(sn.value.trim()==""){
-          alert("name is required");
+          alert("Subject is required");
          return;
      }else{
-   let node={subject:sn.value,idn:id,texe:tn.value};
-       nodes.push(node);
-       localStorage.setItem("nodes",JSON.stringify(nodes));
-       alert("successfuly node"+node);
+   let note={subject:sn.value,idn:id,texe:tn.value};
+       notes.push(note);
+       localStorage.setItem("notes",JSON.stringify(notes));
+       alert("successfuly note"+note);
        sn.value="";
        tn.value="";
        shown();}
@@ -47,13 +47,13 @@ function saven(){
     let sn=document.getElementById("inputs");
    let tn=document.getElementById("inputt");
     if(sn.value.trim()==""){
-          alert("name is required");
+          alert("Subject is required");
          return;
      }else{
-   let node={subject:sn.value,idn:id,texe:tn.value};
-   nodes.push(node);
-  localStorage.setItem("nodes",JSON.stringify(nodes));
-  alert("successfuly node");
+   let note={subject:sn.value,idn:id,texe:tn.value};
+   notes.push(note);
+  localStorage.setItem("notes",JSON.stringify(notes));
+  alert("successfuly note");
   sn.value="";
   tn.value="";
   shown();}
@@ -67,21 +67,22 @@ function shown(){
   document.getElementById("dadd").style.display="none";
  document.getElementById("dshow").style.display="block";   
  empty();
- for(let i=0; i<nodes.length; i++){ 
+ for(let i=0; i<notes.length; i++){ 
     let r = document.getElementById("result");
     let d =document.createElement("div");
-    let newText = document.createTextNode("Subject node : | " + nodes[i].subject + " |   Id Node :" + nodes[i].idn + " |   Texe :" + nodes[i].texe+"  | ");
-    d.appendChild(newText);
+    d.innerHTML=" * "+"Title note : | " + notes[i].title + " |   Id note :" 
+    + notes[i].idn + " |   Texe :" + notes[i].texe + " |   Tag :" + notes[i].tags 
+    + " |   Date Creat :" + notes[i].createdAt + " |   Date edit :" + notes[i].updateAt 
+    +"  | Pinned :"+notes[i].pinned + " | ";
     r.appendChild(d);
     let newBD = document.createElement('button'); 
-    let TextBD = document.createTextNode('Delete'); 
-    newBD.appendChild(TextBD);
+    newBD.innerHTML='Delete'; 
     d.appendChild(newBD);
     newBD.onclick=function(){
-                    if(confirm("Are you sure you went to delet this node?")){
-                    nodes.splice(i,1);
+                    if(confirm("Are you sure you went to delet this note?")){
+                    notes.splice(i,1);
                     r.removeChild(d);
-                    localStorage.setItem("nodes",JSON.stringify(nodes));}
+                    localStorage.setItem("notes",JSON.stringify(notes));}
     };
     
     r.style.textAlign='left';
@@ -104,14 +105,14 @@ function findn(){
   let id=Number(document.getElementById("sidn").value);
   let sub=document.getElementById("ssub").value;
   let found=false;    
-  for(let i=0; i<nodes.length; i++){   
-    if(nodes[i].idn==id||nodes[i].subject==sub){
+  for(let i=0; i<notes.length; i++){   
+    if(notes[i].idn==id||notes[i].subject==sub){
       let r = document.getElementById("rsearch");
-      r.innerHTML+= "<br>"+" Subject :" + nodes[i].subject + " |  Id Node:" + nodes[i].idn + " | Texe:" + nodes[i].texe  + "<br>"; 
+      r.innerHTML+= "<br>"+" Subject :" + notes[i].subject + " |  Id note:" + notes[i].idn + " | Texe:" + notes[i].texe  + "<br>"; 
       found=true; 
        break;  
       }
-  }if(!found)alert("not fund student whtih this ID .");
+  }if(!found)alert("not found note whtih this ID .");
   
 }
 
@@ -132,52 +133,52 @@ function edit(){
   console.log(ide);
   empty();
   let found=false;
-  for(let i=0; i<nodes.length; i++){ 
-    if(nodes[i].idn==ide){
+  for(let i=0; i<notes.length; i++){ 
+    if(notes[i].idn==ide){
       document.getElementById("dadd").style.display="block";
       document.getElementById("save").style.display="none";
       document.getElementById("update").style.display="block";
       editindex=i; 
-      sinput.value=nodes[editindex].subject;
-      tinput.value= nodes[editindex].texe;
+      sinput.value=notes[editindex].subject;
+      tinput.value= notes[editindex].texe;
       found=true;
     }
-    }if(!found)alert("not fund student whtih this ID .");
+    }if(!found)alert("not found note whtih this ID .");
   }
 
 function updates(editindex){
  let sinput=document.getElementById("inputs");
  let tinput=document.getElementById("inputt");
- nodes[editindex].subject= sinput.value;
- nodes[editindex].texe=tinput.value;
- localStorage.setItem("nodes",JSON.stringify(nodes));
- alert("susseccfully update Nodes");
+ notes[editindex].subject= sinput.value;
+ notes[editindex].texe=tinput.value;
+ localStorage.setItem("notes",JSON.stringify(notes));
+ alert("susseccfully update notes");
  document.getElementById("dadd").style.display="none";
  shown();
 }
 
 function sortn(type){
   if(type==1){
-    nodes.sort((a,b)=>a.idn-b.idn);
+    notes.sort((a,b)=>a.idn-b.idn);
    }else if(type==2){
-    nodes.sort((a,b)=>b.idn-a.idn);
+    notes.sort((a,b)=>b.idn-a.idn);
    }else if(type==3){
-    nodes.sort((a,b)=>a.subject.localeCompare(b.subject));
+    notes.sort((a,b)=>a.subject.localeCompare(b.subject));
    }else if(type==4){
-    nodes.sort((a,b)=>b.subject.localeCompare(a.subject));
+    notes.sort((a,b)=>b.subject.localeCompare(a.subject));
    }
  shown();
 }
 
 function filters(){
-let s=document.getElementById("fs").value.toLowerCase();
-document.getElementById("result").innerHTML="";
-let found=false;    
-  for(let i=0; i<nodes.length; i++){
-   let str= nodes[i].subject.toLowerCase();
+ let s=document.getElementById("fs").value.toLowerCase();
+ document.getElementById("result").innerHTML="";
+ let found=false;    
+  for(let i=0; i<notes.length; i++){
+   let str= notes[i].subject.toLowerCase();
     if(str.includes(s)){
       let r = document.getElementById("result");
-      r.innerHTML= "<br>"+" Subject :" + nodes[i].subject + " |  Id Node:" + nodes[i].idn + " | Texe:" + nodes[i].texe  + "<br>"; 
+      r.innerHTML= "<br>"+" Subject :" + notes[i].subject + " |  Id note:" + notes[i].idn + " | Texe:" + notes[i].texe  + "<br>"; 
       found=true; 
        
       }
