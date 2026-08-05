@@ -36,8 +36,9 @@ Projects 10-15
 | 11 | Book Manager| ✅ |
 | 12 | ToDo List| ✅ |
 | 13 | Student Manager Pro| ✅ |
-| 14 | Notes Manager progress.| ✅ |
-| 15 | NODES MANAGER 
+| 14 | .| ✅ |
+| 15 | Notes Manager .| ✅ |
+| 16 | Notes Manager Pro.| ✅ |
 ---
 ## Overview
 Project Delta-500 is my personal learning and portfolio journey toward becoming a Cloud & Network Automation Engineer.
@@ -60,6 +61,31 @@ This repository contains practical projects developed to improve my programming,
 
 ## Completed Projects
 
+# ✅ Project 08 - To-Do List
+
+A task management application.
+
+## Features
+
+- Add Tasks
+- Delete Tasks
+- Mark Completed
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+## What I Learned
+
+- CRUD Basics
+- Arrays
+- Local Storage
+
+## Project Status
+
+✅ Completed
 ### Project 9
 Quiz Application
 
@@ -182,6 +208,57 @@ Learning
 - Terraform
 
 ---
+# 📝 Project 16 - Notes Manager Pro
+
+A complete Notes Manager application built with Vanilla JavaScript.
+
+## Features
+
+- Create Notes
+- Edit Notes
+- Delete Notes
+- Search by Title
+- Search by Content
+- Filter by Tags
+- Filter Pinned Notes
+- Sort Notes
+- Pin / Unpin
+- Creation Date
+- Last Updated Date
+- Local Storage
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Local Storage API
+
+## What I Learned
+
+- Advanced CRUD
+- Data Modeling
+- DOM Manipulation
+- Event Handling
+- Arrays and Objects
+- Search Algorithms
+- Filtering
+- Sorting
+- Debugging
+- Application State Management
+
+## Lessons Learned
+
+- Separate data from UI
+- Design before coding
+- Debug with console.log()
+- Store data in the right format
+- Build reusable functions
+
+## Project Status
+
+✅ Completed
+
 
 ## Roadmap
 
