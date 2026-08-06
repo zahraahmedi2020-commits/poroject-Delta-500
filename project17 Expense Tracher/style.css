@@ -1,0 +1,37 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color:#888081 ;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#main{
+    width: 15%;
+    float:left;
+   background-color: rgb(125, 105, 134);  
+}
+#add,#edit,#search,#show{
+    width: 80%;
+}
+.t-forme{
+    display:grid;
+    grid-template-columns: 65px 250px;
+    gap:10px;
+    margin: 0 auto;
+    width: 80%;
+    background-origin: padding-box;
+}
+
+#dedit,#dadd,#dshow{
+ width: 80%;
+ float:left;
+ text-align: left;
+ margin: 7px;
+ display: none;
+}
+#summary{
+ background-color:#b4989b ;
+    text-align: left;
+    padding: 15px;
+    
+}

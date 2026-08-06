@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="main" ><br><br> 
+
+ <button id="add" type="button"  onclick="addt()">Add  </button> <br><br>  
+ <button id="edit" type="button"  onclick="editt()">Edit</button> <br><br> 
+ <button id="search" type="button"  onclick="deletet()">Deleted</button><br><br> 
+ <button id="show" type="button"  onclick="showt()">Show  </button><br><br>
+ </br></br></div>
+
+ <div id="dadd">
+  <dive class="t-forme">
+  <p></p>  <h3>New Transaction:</h3>
+   Title:<input type="text"  id='inputt' required><br>
+   Amount:  <input type="text"  id='inputam' min="0"><br>
+   <select id="type" >
+    <option value="">select option type transaction</option>
+    <option value="income" >Income</option>
+    <option value="expense" >Expense</option>
+    </select> <br>
+   Date:  <input type="text"  id='inputd'><br><br>
+  <button id="save" type="button"  onclick="savet()">Save </button><br>
+  <button id="update" type="button"   onclick="updateedit(editindex)">Update </button><br> 
+  </dive></div>
+
+  <div id="dedit">
+ <dive class="t-forme">
+  <p></p>  <h3>Edit Transaction:</h3>
+ ID: <input type="text" id="eidt" autocomplete="off" ></br></br>
+<button id="searche" type="button"  onclick="findeditt()">Search </button>
+<button id="dela" type="button"  onclick="deleteall()">Deleted All </button>
+<button id="del" type="button"  onclick="finddeletet()">Delete </button>
+</dive>
+</div>
+
+<div id="dshow">
+<h2 id="heading">Show Transactions </h2>
+<div id="summary">
+     Total Income:<h3 id="TotalIn"></h3>
+     Total Expense:<h3 id="TotalEx"></h3>
+     Balance:<h3 id="Balance"></h3>
+      Number of Transactions:<h3 id="CounterT"></h3>
+</div><br>
+<select id="searchn" onchange="searcht(this.value)">
+    <option value="">select option search</option>
+    <option value="id" >ID</option>
+    <option value="title" >Title</option>
+     </select> 
+<select id="sort" onchange="sortt(this.value)">
+    <option value="">select sort</option>
+    <option value="1" >Amount</option>
+    <option value="4" >Date Ascending</option>
+    <option value="5">Date Descending</option>
+</select>
+<select id="Filtern" onchange="filtert(this.value)">
+    <option value="">select option filter</option>
+    <option value="1" >Income</option>
+    <option value="2">Expense</option>
+    <option value="3">All transactions</option>
+    </select> 
+ <div id="dsearch"><h3 id="headingshow">Search Transactions</h3>
+    <input  id="inputtype" oninput="searchTran(this.value)">
+ </div><br>
+  <div id="result"></div><br>  
+</div>
+
+</body>
+
+ <script src="script.js"></script>
+     
+</html>
