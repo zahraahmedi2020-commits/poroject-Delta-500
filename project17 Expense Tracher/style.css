@@ -15,11 +15,21 @@ body {
 }
 .t-forme{
     display:grid;
-    grid-template-columns: 65px 250px;
+    grid-template-columns: 85px 250px;
     gap:10px;
-    margin: 0 auto;
     width: 80%;
     background-origin: padding-box;
+}
+
+.ts-forme{
+    display:grid;
+    grid-template-columns: 220px 70px;
+    gap:10px;
+    width: 80%;
+    background-origin: padding-box;
+    font-size: 14px;
+    margin-top: 0.13px;
+    margin-bottom: 0.13px;
 }
 
 #dedit,#dadd,#dshow{

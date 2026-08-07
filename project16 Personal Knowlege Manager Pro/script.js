@@ -134,7 +134,7 @@ function findd(){
     let found=false;
     for(let i=0; i<notes.length; i++){ 
       if(notes[i].idn==ide){
-       if(confirm("Are you sure you went to delet this note?")){
+       if(confirm("Are you sure you went to deleted this note?")){
          notes.splice(i,1);
          localStorage.setItem("notes",JSON.stringify(notes));}
         found=true; }
@@ -142,7 +142,7 @@ function findd(){
 }
 
 function deleteall(){
-if(confirm("Are you sure you went to delet all students?")){
+if(confirm("Are you sure you went to deleted all students?")){
  localStorage.removeItem("notes");
  notes=[];}
 }
@@ -200,8 +200,7 @@ function searchn(type){
 }
 
 function searchNotes(value){
-  console.log({type:currenttype,value:value});
-  
+  console.log({type:currenttype,value:value}); 
  if(currenttype=="title"){
  let s=value.toLowerCase();
  document.getElementById("result").innerHTML="";
