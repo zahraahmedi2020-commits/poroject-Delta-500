@@ -229,432 +229,204 @@ A simple application for generating random colors.
 
 ## Technologies
 
-* HTML5
-* CSS3
-* JavaScript
-
-## What I Learned
-
-* Random Numbers
-* String Manipulation
-
-## Project Status
-
-✅ Completed
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
 
 ---
 
-# 🔐 Project 07 - Password Generator
+## Completed Projects
 
-A random password generator.
+| No | Project | Status |
+|----|---------|--------|
+| 1 | Project 1 | ✅ |
+| 2 | Project 2 | ✅ |
+| 3 | Project 3 | ✅ |
+| 4 | Project 4 | ✅ |
+| 5 | Project 5 | ✅ |
+| 6 | Project 6 | ✅ |
+| 7 | Project 7 | ✅ |
+| 8 | Project 8 | ✅ |
+| 9 | Quiz App | ✅ |
+| 10 | Student Management System | ✅ |
+Projects 10-15
+| 10 | Student Manager | ✅ |
+| 11 | Book Manager| ✅ |
+| 12 | ToDo List| ✅ |
+| 13 | Student Manager Pro| ✅ |
+| 14 | Notes Manager progress.| ✅ |
+| 15 | NODES MANAGER 
+---
+## Overview
+Project Delta-500 is my personal learning and portfolio journey toward becoming a Cloud & Network Automation Engineer.
+
+This repository contains practical projects developed to improve my programming, problem-solving, and software engineering skills.
+
+---
+
+## Objectives
+
+- Build a professional programming portfolio
+- Master JavaScript fundamentals
+- Learn Git & GitHub workflow
+- Continue with React
+- Learn Python for Automation
+- Develop Network Automation projects
+- Prepare for Remote and Freelance opportunities
+
+---
+
+## Completed Projects
+
+### Project 9
+Quiz Application
+
+**Skills**
+- Arrays
+- DOM Manipulation
+- Events
+- Score Calculation
+
+---
+
+### Project 10
+Student Manager
+
+**Skills**
+- CRUD Operations
+- Search
+- Average Score
+- JavaScript Objects
+
+---
+
+### Project 11
+Book Manager
+
+**Skills**
+- Object Management
+- Dynamic UI
+- JavaScript Functions
+
+---
+
+### Project 12
+ToDo List
+
+**Skills**
+- Dynamic DOM
+- LocalStorage
+- Delete Tasks
+- Status Management
+
+---
+
+### Project 13
+Student Manager Pro
+
+**Features**
+- Add Student
+- Edit Student
+- Delete Student
+- Search
+- Sort
+- Max / Min Score
+- Average Score
+
+---
+
+### Project 14
+Notes Manager
+
+Current Features
+
+- Add Notes
+- Show All Notes
+- Delete Notes
+- LocalStorage
+
+Upcoming
+
+- Filter
+- Sorting
+- Search
+- Better UI
+
+---
+
+## Current Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+- VS Code
+
+Learning
+
+- React
+- Python
+- Linux
+- Docker
+- Network Automation
+- AWS
+- Terraform
+
+---
+# 📝 Project 16 - Notes Manager Pro
+
+A complete Notes Manager application built with Vanilla JavaScript.
 
 ## Features
 
-* Custom Password Length
-* Random Characters
+- Create Notes
+- Edit Notes
+- Delete Notes
+- Search by Title
+- Search by Content
+- Filter by Tags
+- Filter Pinned Notes
+- Sort Notes
+- Pin / Unpin
+- Creation Date
+- Last Updated Date
+- Local Storage
 
 ## Technologies
 
-* HTML5
-* CSS3
-* JavaScript
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Local Storage API
 
 ## What I Learned
 
-* Loops
-* Random Functions
-* String Manipulation
-
-## Project Status
-
-✅ Completed
-
----
-
-# ✅ Project 08 - To-Do List
-
-A task management application.
-
-## Features
-
-* Add Tasks
-* Delete Tasks
-* Mark Tasks as Completed
-
-## Technologies
-
-* HTML5
-* CSS3
-* JavaScript
-
-## What I Learned
-
-* CRUD Basics
-* Arrays
-* LocalStorage
-
-## Project Status
-
-✅ Completed
-
----
-
-# 🧠 Project 09 - Quiz App
-
-A JavaScript quiz application.
-
-## Skills
-
-* Arrays
-* DOM Manipulation
-* Events
-* Score Calculation
-
-## Project Status
-
-✅ Completed
-
----
-
-# 👨‍🎓 Project 10 - Student Manager
-
-A student management application.
-
-## Skills
-
-* CRUD Operations
-* Search
-* Average Score
-* JavaScript Objects
-
-## Project Status
-
-✅ Completed
-
----
-
-# 📚 Project 11 - Book Manager
-
-A simple book management application.
-
-## Skills
-
-* Object Management
-* Dynamic UI
-* JavaScript Functions
-
-## Project Status
-
-✅ Completed
-
----
-
-# 📝 Project 12 - ToDo List
-
-An improved task management application.
-
-## Skills
-
-* Dynamic DOM
-* LocalStorage
-* Delete Tasks
-* Status Management
-
-## Project Status
-
-✅ Completed
-
----
-
-# 👨‍🎓 Project 13 - Student Manager
-
-An improved student management application.
-
-## Features
-
-* Add Student
-* Edit Student
-* Delete Student
-* Search
-* Sort
-* Maximum / Minimum Score
-* Average Score
-
-## Project Status
-
-✅ Completed
-
----
-
-# 🎓 Project 14 - Student Manager Pro
-
-An advanced version of the Student Manager application.
-
-## Features
-
-* Student Management
-* CRUD Operations
-* Search
-* Sort
-* Data Processing
-* Improved UI
-
-## What I Learned
-
-* Advanced CRUD
-* Data Processing
-* Code Organization
-* Debugging
-* Reusable Functions
-
-## Project Status
-
-✅ Completed
-
----
-
-# 📝 Project 15 - Notes Manager
-
-A notes management application built with Vanilla JavaScript.
-
-## Features
-
-* Add Notes
-* View All Notes
-* Delete Notes
-* Search
-* Filter
-* Sort
-* LocalStorage
-
-## Technologies
-
-* HTML5
-* CSS3
-* JavaScript
-* LocalStorage
-
-## What I Learned
-
-* CRUD Operations
-* LocalStorage
-* Arrays and Objects
-* Search
-* Filtering
-* Sorting
-* Debugging
-* Project Structure
-
-## Project Status
-
-✅ Completed
-
----
-
-# 📒 Project 16 - Notes Manager Pro
-
-A more advanced Notes Manager application built with Vanilla JavaScript.
-
-## Features
-
-* Create Notes
-* Edit Notes
-* Delete Notes
-* Search by Title
-* Search by Content
-* Filter by Tags
-* Filter Pinned Notes
-* Sort Notes
-* Pin / Unpin
-* Creation Date
-* Last Updated Date
-* LocalStorage
-
-## Technologies
-
-* HTML5
-* CSS3
-* JavaScript (ES6)
-* LocalStorage API
-
-## What I Learned
-
-* Advanced CRUD
-* Data Modeling
-* DOM Manipulation
-* Event Handling
-* Arrays and Objects
-* Search Algorithms
-* Filtering
-* Sorting
-* Debugging
-* Application State Management
+- Advanced CRUD
+- Data Modeling
+- DOM Manipulation
+- Event Handling
+- Arrays and Objects
+- Search Algorithms
+- Filtering
+- Sorting
+- Debugging
+- Application State Management
 
 ## Lessons Learned
 
-* Separate data from UI
-* Design before coding
-* Debug with `console.log()`
-* Store data in the appropriate format
-* Build reusable functions
-* Check data types before processing
-* Display data and processing data may require different formats
+- Separate data from UI
+- Design before coding
+- Debug with console.log()
+- Store data in the right format
+- Build reusable functions
 
 ## Project Status
 
 ✅ Completed
 
----
-
-# 💰 Project 17 - Expense Tracker
-
-A JavaScript-based Expense Tracker for managing income and expense transactions.
-
-Project 17 introduces a more structured dashboard-style UI and continues the development of practical JavaScript skills.
-
-## Features
-
-* Add income and expense transactions
-* Edit transactions
-* Delete transactions
-* Display transactions in a table
-* Search transactions
-* Sort transactions
-* Filter transactions
-* Validate transaction data
-* Store transactions in LocalStorage
-* Calculate financial totals
-* Distinguish income and expenses visually
-
-## UI Design
-
-Unlike some previous projects, Project 17 uses a fixed navigation panel on the left side.
-
-Each menu option displays its corresponding section on the right side.
-
-This approach provides a more structured and dashboard-like user interface.
-
-## Technologies
-
-* HTML5
-* CSS3
-* JavaScript (ES6)
-* LocalStorage API
-* Git
-* GitHub
-
-## JavaScript Concepts Practiced
-
-* DOM Manipulation
-* `createElement()`
-* `appendChild()`
-* Event Handling
-* Objects
-* Arrays
-* `filter()`
-* `sort()`
-* `includes()`
-* Form Validation
-* LocalStorage
-* Date Handling
-* `getTime()`
-* Data Processing
-
-## Data Management
-
-Transaction data is stored in LocalStorage.
-
-Date information is handled in two forms:
-
-* A readable format for displaying dates to the user
-* A numeric timestamp using `getTime()` for sorting and processing
-
-This project reinforces the importance of choosing the correct data format for each operation.
-
-## Code Reuse & Optimization
-
-Project 17 focuses more strongly on code reuse and code quality.
-
-Reusable functions are used for tasks such as:
-
-* Creating table elements
-* Displaying transaction data
-* Processing data
-* Updating the UI
-* Managing application logic
-
-The goal is to keep the code:
-
-* Clean
-* Reusable
-* Maintainable
-* Easy to debug
-
-## Debugging Approach
-
-Project 17 continues the systematic debugging approach used in previous projects.
-
-The process includes:
-
-1. Identify the unexpected behavior.
-2. Inspect the actual data.
-3. Use `console.log()` to check variables.
-4. Check data types.
-5. Follow the execution flow.
-6. Locate the logical problem.
-7. Fix the problem.
-8. Test the feature again.
-
-## Linux / Ubuntu Track
-
-Linux practice continues alongside the JavaScript development track.
-
-Ubuntu is practiced inside a virtual machine to build familiarity with:
-
-* Terminal commands
-* File and directory management
-* Basic Linux workflow
-
-The long-term goal is to connect Linux knowledge with Python and Network Automation.
-
-## Git & GitHub
-
-Git and GitHub are used throughout the development process.
-
-Typical workflow:
-
-```bash
-git status
-git add .
-git commit -m "Project 17 update"
-git push
-```
-
-## English Track
-
-Technical English practice continues through:
-
-* Reading technical documentation
-* Using English programming terminology
-* Writing README documentation
-* Writing Git commit messages in English
-
-## Lessons Learned
-
-* UI structure can significantly affect usability.
-* Always check data types before writing an algorithm.
-* Display data is not always suitable for processing.
-* Reusable functions improve code quality.
-* Debugging should be systematic instead of based on guessing.
-* `console.log()` is a valuable first debugging tool.
-* UI and application logic should be developed together.
-* Code optimization should improve readability and maintainability, not only reduce code size.
-
-## Project Status
-
-🔄 In Progress
-
----
 
 # 🧭 Roadmap
 
