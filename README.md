@@ -1,12 +1,12 @@
 # 🚀 Delta-500
 
-## About Me
+## 👨‍💻 About Me
 
-Hello! I'm a Network Engineer with 3 years of experience and an M.Sc. in Networking.
+Hello! I'm a **Network Engineer with 3 years of experience** and an **M.Sc. in Networking**.
 
 Currently, I am developing my programming and software engineering skills through practical projects as part of the **Project Delta-500** learning roadmap.
 
-My long-term goal is to combine programming, Linux, cloud, and networking skills to become a **Cloud & Network Automation Engineer**.
+My long-term goal is to combine **programming, Linux, cloud, networking, and automation** skills to become a **Cloud & Network Automation Engineer**.
 
 ---
 
@@ -14,34 +14,38 @@ My long-term goal is to combine programming, Linux, cloud, and networking skills
 
 **Project Delta-500** is my personal learning and portfolio journey toward becoming a Cloud & Network Automation Engineer.
 
-This repository contains practical projects designed to improve:
+The repository contains practical projects that progressively improve:
 
 * Programming skills
 * Problem-solving
 * JavaScript development
+* DOM manipulation
+* Data management
 * Software engineering fundamentals
+* Debugging
+* Code reuse and optimization
 * Git & GitHub workflow
 * Linux skills
-* Debugging and code optimization
+* Technical English
 * Automation skills
 
 The projects become progressively more complex as new concepts and technologies are introduced.
 
 ---
 
-## 🛠️ Technologies
+# 🛠️ Technologies
 
-### Current
+## Current
 
 * HTML5
 * CSS3
 * JavaScript
+* LocalStorage API
 * Git
 * GitHub
 * VS Code
-* LocalStorage API
 
-### Learning Roadmap
+## Learning Roadmap
 
 * Advanced JavaScript
 * React
@@ -54,7 +58,7 @@ The projects become progressively more complex as new concepts and technologies 
 
 ---
 
-# 📊 Completed Projects
+# 📊 Project Progress
 
 | No. | Project                | Status |
 | --- | ---------------------- | ------ |
@@ -74,7 +78,9 @@ The projects become progressively more complex as new concepts and technologies 
 | 14  | Student Manager Pro    | ✅      |
 | 15  | Notes Manager          | ✅      |
 | 16  | Notes Manager Pro      | ✅      |
-| 17  | Expense Tracker        | 🔄     |
+| 17  | Expense Tracker        | ✅      |
+
+**17 Practical Projects Completed**
 
 ---
 
@@ -82,26 +88,20 @@ The projects become progressively more complex as new concepts and technologies 
 
 A simple calculator application built with HTML, CSS, and Vanilla JavaScript.
 
-## Features
+### Features
 
 * Basic arithmetic operations
 * Responsive interface
 * Keyboard-friendly design
 
-## Technologies
-
-* HTML5
-* CSS3
-* JavaScript
-
-## What I Learned
+### Skills Learned
 
 * Variables
 * Functions
 * Events
 * DOM Manipulation
 
-## Project Status
+### Status
 
 ✅ Completed
 
@@ -109,27 +109,21 @@ A simple calculator application built with HTML, CSS, and Vanilla JavaScript.
 
 # ⏰ Project 02 - Digital Clock
 
-A real-time digital clock using JavaScript.
+A real-time digital clock built with JavaScript.
 
-## Features
+### Features
 
 * Live time update
 * Automatic refresh every second
 * Clean UI
 
-## Technologies
-
-* HTML5
-* CSS3
-* JavaScript
-
-## What I Learned
+### Skills Learned
 
 * Date Object
 * `setInterval()`
 * DOM Updates
 
-## Project Status
+### Status
 
 ✅ Completed
 
@@ -139,25 +133,19 @@ A real-time digital clock using JavaScript.
 
 A simple counter application.
 
-## Features
+### Features
 
 * Increase
 * Decrease
 * Reset
 
-## Technologies
-
-* HTML5
-* CSS3
-* JavaScript
-
-## What I Learned
+### Skills Learned
 
 * Event Listeners
 * State Management
 * DOM Manipulation
 
-## Project Status
+### Status
 
 ✅ Completed
 
@@ -165,27 +153,21 @@ A simple counter application.
 
 # ⚖️ Project 04 - BMI Calculator
 
-A BMI calculator built with JavaScript.
+A JavaScript-based BMI calculator.
 
-## Features
+### Features
 
 * BMI Calculation
 * Result Categories
 * Input Validation
 
-## Technologies
-
-* HTML5
-* CSS3
-* JavaScript
-
-## What I Learned
+### Skills Learned
 
 * User Input
 * Conditional Logic
 * Form Validation
 
-## Project Status
+### Status
 
 ✅ Completed
 
@@ -195,24 +177,18 @@ A BMI calculator built with JavaScript.
 
 A simple application that displays random quotes.
 
-## Features
+### Features
 
 * Random Quotes
 * Dynamic Updates
 
-## Technologies
-
-* HTML5
-* CSS3
-* JavaScript
-
-## What I Learned
+### Skills Learned
 
 * Arrays
 * Random Selection
 * Event Handling
 
-## Project Status
+### Status
 
 ✅ Completed
 
@@ -222,223 +198,416 @@ A simple application that displays random quotes.
 
 A simple application for generating random colors.
 
-## Features
+### Features
 
 * Random HEX Colors
 * Copy Color Code
 
-## Technologies
+### Skills Learned
 
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub
+* Random Numbers
+* String Manipulation
 
----
-
-## Completed Projects
-
-| No | Project | Status |
-|----|---------|--------|
-| 1 | Project 1 | ✅ |
-| 2 | Project 2 | ✅ |
-| 3 | Project 3 | ✅ |
-| 4 | Project 4 | ✅ |
-| 5 | Project 5 | ✅ |
-| 6 | Project 6 | ✅ |
-| 7 | Project 7 | ✅ |
-| 8 | Project 8 | ✅ |
-| 9 | Quiz App | ✅ |
-| 10 | Student Management System | ✅ |
-Projects 10-15
-| 10 | Student Manager | ✅ |
-| 11 | Book Manager| ✅ |
-| 12 | ToDo List| ✅ |
-| 13 | Student Manager Pro| ✅ |
-| 14 | Notes Manager progress.| ✅ |
-| 15 | NODES MANAGER 
----
-## Overview
-Project Delta-500 is my personal learning and portfolio journey toward becoming a Cloud & Network Automation Engineer.
-
-This repository contains practical projects developed to improve my programming, problem-solving, and software engineering skills.
-
----
-
-## Objectives
-
-- Build a professional programming portfolio
-- Master JavaScript fundamentals
-- Learn Git & GitHub workflow
-- Continue with React
-- Learn Python for Automation
-- Develop Network Automation projects
-- Prepare for Remote and Freelance opportunities
-
----
-
-## Completed Projects
-
-### Project 9
-Quiz Application
-
-**Skills**
-- Arrays
-- DOM Manipulation
-- Events
-- Score Calculation
-
----
-
-### Project 10
-Student Manager
-
-**Skills**
-- CRUD Operations
-- Search
-- Average Score
-- JavaScript Objects
-
----
-
-### Project 11
-Book Manager
-
-**Skills**
-- Object Management
-- Dynamic UI
-- JavaScript Functions
-
----
-
-### Project 12
-ToDo List
-
-**Skills**
-- Dynamic DOM
-- LocalStorage
-- Delete Tasks
-- Status Management
-
----
-
-### Project 13
-Student Manager Pro
-
-**Features**
-- Add Student
-- Edit Student
-- Delete Student
-- Search
-- Sort
-- Max / Min Score
-- Average Score
-
----
-
-### Project 14
-Notes Manager
-
-Current Features
-
-- Add Notes
-- Show All Notes
-- Delete Notes
-- LocalStorage
-
-Upcoming
-
-- Filter
-- Sorting
-- Search
-- Better UI
-
----
-
-## Current Tech Stack
-
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub
-- VS Code
-
-Learning
-
-- React
-- Python
-- Linux
-- Docker
-- Network Automation
-- AWS
-- Terraform
-
----
-# 📝 Project 16 - Notes Manager Pro
-
-A complete Notes Manager application built with Vanilla JavaScript.
-
-## Features
-
-- Create Notes
-- Edit Notes
-- Delete Notes
-- Search by Title
-- Search by Content
-- Filter by Tags
-- Filter Pinned Notes
-- Sort Notes
-- Pin / Unpin
-- Creation Date
-- Last Updated Date
-- Local Storage
-
-## Technologies
-
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- Local Storage API
-
-## What I Learned
-
-- Advanced CRUD
-- Data Modeling
-- DOM Manipulation
-- Event Handling
-- Arrays and Objects
-- Search Algorithms
-- Filtering
-- Sorting
-- Debugging
-- Application State Management
-
-## Lessons Learned
-
-- Separate data from UI
-- Design before coding
-- Debug with console.log()
-- Store data in the right format
-- Build reusable functions
-
-## Project Status
+### Status
 
 ✅ Completed
 
+---
+
+# 🔐 Project 07 - Password Generator
+
+A random password generator.
+
+### Features
+
+* Custom Password Length
+* Random Characters
+
+### Skills Learned
+
+* Loops
+* Random Functions
+* String Manipulation
+
+### Status
+
+✅ Completed
+
+---
+
+# ✅ Project 08 - To-Do List
+
+A task management application.
+
+### Features
+
+* Add Tasks
+* Delete Tasks
+* Mark Tasks as Completed
+
+### Skills Learned
+
+* CRUD Basics
+* Arrays
+* LocalStorage
+
+### Status
+
+✅ Completed
+
+---
+
+# 🧠 Project 09 - Quiz App
+
+A JavaScript quiz application.
+
+### Skills
+
+* Arrays
+* DOM Manipulation
+* Events
+* Score Calculation
+
+### Status
+
+✅ Completed
+
+---
+
+# 👨‍🎓 Project 10 - Student Manager
+
+A student management application.
+
+### Skills
+
+* CRUD Operations
+* Search
+* Average Score
+* JavaScript Objects
+
+### Status
+
+✅ Completed
+
+---
+
+# 📚 Project 11 - Book Manager
+
+A book management application.
+
+### Skills
+
+* Object Management
+* Dynamic UI
+* JavaScript Functions
+
+### Status
+
+✅ Completed
+
+---
+
+# 📝 Project 12 - ToDo List
+
+An improved task management application.
+
+### Skills
+
+* Dynamic DOM
+* LocalStorage
+* Delete Tasks
+* Status Management
+
+### Status
+
+✅ Completed
+
+---
+
+# 👨‍🎓 Project 13 - Student Manager
+
+An improved student management application.
+
+### Features
+
+* Add Student
+* Edit Student
+* Delete Student
+* Search
+* Sort
+* Maximum / Minimum Score
+* Average Score
+
+### Status
+
+✅ Completed
+
+---
+
+# 🎓 Project 14 - Student Manager Pro
+
+An advanced version of the Student Manager application.
+
+### Features
+
+* Student Management
+* CRUD Operations
+* Search
+* Sort
+* Data Processing
+* Improved UI
+
+### Skills Learned
+
+* Advanced CRUD
+* Data Processing
+* Code Organization
+* Debugging
+* Reusable Functions
+
+### Status
+
+✅ Completed
+
+---
+
+# 📝 Project 15 - Notes Manager
+
+A notes management application built with Vanilla JavaScript.
+
+### Features
+
+* Add Notes
+* View All Notes
+* Delete Notes
+* Search
+* Filter
+* Sort
+* LocalStorage
+
+### Skills Learned
+
+* CRUD Operations
+* LocalStorage
+* Arrays and Objects
+* Search
+* Filtering
+* Sorting
+* Debugging
+* Project Structure
+
+### Status
+
+✅ Completed
+
+---
+
+# 📒 Project 16 - Notes Manager Pro
+
+A more advanced Notes Manager application built with Vanilla JavaScript.
+
+### Features
+
+* Create Notes
+* Edit Notes
+* Delete Notes
+* Search by Title
+* Search by Content
+* Filter by Tags
+* Filter Pinned Notes
+* Sort Notes
+* Pin / Unpin
+* Creation Date
+* Last Updated Date
+* LocalStorage
+
+### Skills Learned
+
+* Advanced CRUD
+* Data Modeling
+* DOM Manipulation
+* Event Handling
+* Arrays and Objects
+* Search Algorithms
+* Filtering
+* Sorting
+* Debugging
+* Application State Management
+
+### Lessons Learned
+
+* Separate data from UI
+* Design before coding
+* Debug with `console.log()`
+* Store data in the appropriate format
+* Build reusable functions
+* Check data types before processing
+* Display data and processing data may require different formats
+
+### Status
+
+✅ Completed
+
+---
+
+# 💰 Project 17 - Expense Tracker
+
+A practical Expense Tracker application built with **HTML, CSS, and Vanilla JavaScript**.
+
+Project 17 introduced a more structured dashboard-style UI and continued the development of practical JavaScript skills.
+
+### Features
+
+* Add income and expense transactions
+* Edit transactions
+* Delete transactions
+* Display transactions in a dynamic table
+* Search transactions
+* Filter transactions
+* Sort transactions
+* Form validation
+* LocalStorage
+* Calculate total income
+* Calculate total expenses
+* Calculate balance
+* Visually distinguish income and expenses
+
+### UI Design
+
+Project 17 introduced a different navigation structure compared with previous projects.
+
+Instead of using a menu button, the navigation menu is displayed as a **fixed panel on the left side**.
+
+Each menu option displays its corresponding section on the right side.
+
+### Skills Learned
+
+* CRUD Operations
+* DOM Manipulation
+* Dynamic Table Creation
+* `createElement()`
+* `appendChild()`
+* Arrays
+* Objects
+* `filter()`
+* `sort()`
+* `includes()`
+* Form Validation
+* LocalStorage
+* Date Handling
+* `getTime()`
+* Data Processing
+* Reusable Functions
+* Code Optimization
+* Systematic Debugging
+
+### Additional Learning Tracks
+
+**Linux / Ubuntu**
+
+* Practiced Linux commands
+* Practiced basic Ubuntu workflow
+* Used a virtual machine for Linux practice
+
+**Git & GitHub**
+
+* Continued version control workflow
+* Used commits and pushes throughout development
+* Maintained the Delta-500 repository
+
+**Technical English**
+
+* Read technical documentation
+* Used English programming terminology
+* Wrote project documentation
+* Used English Git commit messages
+
+### Lessons Learned
+
+* Always check data types before processing data.
+* Display data is not always suitable for processing.
+* Reusable functions improve code quality.
+* Debugging should be systematic rather than based on guessing.
+* `console.log()` is a valuable first debugging tool.
+* UI structure has a significant effect on usability.
+* Code optimization should improve readability and maintainability.
+* Features can affect other parts of an application.
+* Building and testing features step by step makes debugging easier.
+
+### Status
+
+✅ Completed
+
+---
+
+# 🧠 Skills Developed So Far
+
+Through the first 17 projects, I have strengthened my skills in:
+
+### Programming
+
+* JavaScript Fundamentals
+* Functions
+* Arrays
+* Objects
+* DOM Manipulation
+* Events
+* CRUD Operations
+* Data Processing
+* Array Methods
+* Form Validation
+
+### Web Development
+
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* Dynamic UI
+* LocalStorage
+* Dashboard-style UI
+
+### Software Development
+
+* Debugging
+* Code Reuse
+* Refactoring
+* Code Optimization
+* Data Modeling
+* Application State Management
+* Project Structure
+
+### Development Tools
+
+* VS Code
+* Git
+* GitHub
+* Linux / Ubuntu
+
+### Professional Skills
+
+* Technical Documentation
+* Technical English
+* Problem-solving
+* Step-by-step debugging
+* Building a practical project portfolio
+
+---
 
 # 🧭 Roadmap
 
-### Completed
+## Completed
 
 ✔ HTML5
 ✔ CSS3
 ✔ JavaScript Fundamentals
 ✔ Git & GitHub
+✔ LocalStorage
+✔ CRUD Projects
+✔ DOM Manipulation
+✔ Debugging Practice
 ✔ 17 Practical Projects
 
-### Next Steps
+## Next Steps
 
 ⬜ Advanced JavaScript
 ⬜ React
@@ -449,9 +618,24 @@ A complete Notes Manager application built with Vanilla JavaScript.
 ⬜ AWS
 ⬜ Terraform
 
-### Long-Term Goal
+## Long-Term Goal
 
 ⬜ **Cloud & Network Automation Engineer**
+
+---
+
+# 🎯 Objectives
+
+* Build a professional programming portfolio
+* Strengthen JavaScript skills
+* Learn advanced JavaScript concepts
+* Learn React
+* Develop Python skills for automation
+* Strengthen Linux knowledge
+* Develop Network Automation projects
+* Learn Docker and cloud technologies
+* Build practical Cloud & Network Automation projects
+* Prepare for remote and freelance opportunities
 
 ---
 
@@ -472,6 +656,20 @@ Each project should improve at least one of the following:
 * Professional Git/GitHub workflow
 
 The projects are designed to become progressively more challenging and practical.
+
+---
+
+# 📈 Current Position
+
+**17 practical projects completed**
+
+Current focus:
+
+**JavaScript → Advanced JavaScript → React → Python → Linux → Network Automation**
+
+Long-term direction:
+
+**Cloud & Network Automation Engineer**
 
 ---
 
