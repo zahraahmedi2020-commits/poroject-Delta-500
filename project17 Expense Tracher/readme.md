@@ -1,8 +1,8 @@
-# Project 17 – Expense Tracker
+# 💰 Project 17 - Expense Tracker
 
-A JavaScript-based Expense Tracker built as part of the **Project Delta-500** learning roadmap.
+A practical Expense Tracker application built with **HTML, CSS, and Vanilla JavaScript** as part of the **Project Delta-500** learning roadmap.
 
-This project focuses on managing income and expense transactions while practicing **JavaScript, DOM manipulation, LocalStorage, UI design, debugging, Git/GitHub, Linux, and technical English**.
+This project focuses on transaction management, DOM manipulation, LocalStorage, data processing, reusable functions, debugging, and improved UI design.
 
 ---
 
@@ -10,68 +10,71 @@ This project focuses on managing income and expense transactions while practicin
 
 * Build a practical Expense Tracker application.
 * Practice JavaScript DOM manipulation.
-* Store and manage data using LocalStorage.
-* Implement Add, Edit, Delete, Search, Sort and Filter features.
+* Manage income and expense transactions.
+* Store application data using LocalStorage.
+* Practice CRUD operations.
+* Implement Search, Filter, and Sort.
+* Improve validation and error handling.
+* Practice reusable functions and code optimization.
 * Improve UI structure and usability.
-* Practice debugging step-by-step using `console.log()`.
-* Improve code reuse and optimization.
-* Continue Git/GitHub workflow.
-* Continue Linux/Ubuntu practice as part of the Delta-500 roadmap.
+* Continue Git & GitHub workflow.
+* Continue Linux / Ubuntu practice.
+* Improve technical English through documentation.
 
 ---
 
 ## ✨ Features
 
-* Add new income and expense transactions.
+* Add income and expense transactions.
 * Edit existing transactions.
 * Delete transactions.
 * Display transactions in a structured table.
 * Search transactions.
-* Sort transactions.
 * Filter transactions.
-* Store data in LocalStorage.
+* Sort transactions.
 * Validate transaction data.
 * Prevent negative expense amounts.
-* Display income and expense information separately.
-* Calculate financial totals.
-* Use different visual indicators for income and expenses.
-* Responsive and organized UI structure.
+* Store transactions in LocalStorage.
+* Calculate total income.
+* Calculate total expenses.
+* Calculate the final balance.
+* Visually distinguish income and expenses.
 
 ---
 
 ## 🖥️ UI Design
 
-Project 17 introduces a different UI approach compared with previous projects.
+Project 17 introduces a different UI structure compared with previous projects.
 
-Instead of using a menu button to open and close the navigation menu, the menu is displayed as a **fixed section on the left side**.
+Instead of using a menu button to open and close the navigation menu, the navigation menu is displayed as a **fixed section on the left side**.
 
-Each menu option displays its corresponding section on the right side.
+Each menu option displays its corresponding content section on the right side.
 
-This approach makes the application easier to navigate and provides a more dashboard-like structure.
+This structure provides a more organized and dashboard-like user experience.
 
 ---
 
 ## 🧠 JavaScript Concepts Practiced
 
-* Variables and data types
+* Variables and Data Types
 * Functions
 * Objects
 * Arrays
-* Array methods
+* Array Methods
 * `filter()`
 * `sort()`
 * `includes()`
-* DOM manipulation
+* DOM Manipulation
 * `createElement()`
 * `appendChild()`
-* Event handling
-* Form validation
+* Event Handling
+* Form Validation
 * LocalStorage
-* Date handling
+* Date Handling
 * `getTime()`
-* Data conversion
-* Conditional logic
-* Code reuse
+* Conditional Logic
+* Data Processing
+* Reusable Functions
 
 ---
 
@@ -87,90 +90,144 @@ Each transaction contains information such as:
 * Type
 * Date
 
-Two date formats are considered:
+Date information is handled in two different forms:
 
-1. A readable date format for displaying information to the user.
-2. A numeric timestamp using `getTime()` for reliable sorting and processing.
+### Display Date
 
-This separation helps prevent display-oriented data from being incorrectly used for algorithmic operations.
+A readable date format is used when displaying information to the user.
 
----
+### Processing Date
 
-## 🔍 Search, Sort & Filter
+A numeric timestamp generated with `getTime()` is used when sorting and processing dates.
 
-The application supports working with transaction data using JavaScript array methods.
+This project reinforced an important concept:
 
-Examples include:
-
-* Searching transaction information.
-* Filtering transactions by type.
-* Sorting transactions.
-* Processing transaction data before displaying it.
-
-The project emphasizes understanding the difference between **data processing** and **data presentation**.
+> Data that is suitable for display is not always suitable for processing.
 
 ---
 
-## 🐛 Debugging Approach
+## 🔄 CRUD Operations
 
-One of the main lessons of Project 17 is systematic debugging.
+Project 17 implements the main CRUD operations.
 
-The debugging process used during development:
+### Create
 
-1. Identify the unexpected behavior.
-2. Check the actual data.
-3. Use `console.log()` to inspect variables.
-4. Check data types.
-5. Follow the execution flow.
-6. Locate the logical problem.
-7. Fix the issue.
-8. Test the feature again.
+Users can add new income and expense transactions.
 
-`console.log()` continues to be one of the primary debugging tools in the Delta-500 projects.
+### Read
+
+Transactions are retrieved from LocalStorage and displayed dynamically in a table.
+
+### Update
+
+Existing transactions can be edited and updated after validation.
+
+### Delete
+
+Transactions can be deleted from the application and LocalStorage.
+
+---
+
+## 🔍 Search, Filter & Sort
+
+The application provides several ways to work with transaction data.
+
+### Search
+
+Transactions can be searched using the available transaction information.
+
+### Filter
+
+Transactions can be filtered based on their type or other available criteria.
+
+### Sort
+
+Transaction data can be sorted using JavaScript array methods.
+
+The project reinforces the use of:
+
+```javascript
+filter()
+sort()
+includes()
+```
+
+---
+
+## 💰 Financial Summary
+
+The application processes transaction data to calculate:
+
+* Total Income
+* Total Expenses
+* Balance
+
+Income and expenses are also visually distinguished to make the financial information easier to understand.
 
 ---
 
 ## ♻️ Code Reuse & Optimization
 
-Project 17 also focuses on improving code quality.
+One of the important goals of Project 17 was improving code quality.
 
-Instead of repeatedly writing similar code, reusable functions are created for tasks such as:
+Instead of repeating similar code, reusable functions were created for tasks such as:
 
-* Creating table elements.
-* Displaying transaction data.
-* Managing form data.
-* Updating the UI.
-* Processing transactions.
+* Creating table elements
+* Displaying transaction data
+* Processing transaction data
+* Updating the UI
+* Managing application logic
 
-The goal is to make the code:
+The goal was not simply to write less code, but to make the code:
 
 * Cleaner
-* Smaller
+* Reusable
 * Easier to understand
 * Easier to maintain
 * Easier to debug
-* Reusable in future projects
+
+---
+
+## 🐛 Debugging Approach
+
+Debugging was performed step by step during development.
+
+The process included:
+
+1. Identifying unexpected behavior.
+2. Checking the actual data.
+3. Using `console.log()` to inspect variables.
+4. Checking data types.
+5. Following the execution flow.
+6. Finding the logical problem.
+7. Fixing the problem.
+8. Testing the feature again.
+
+`console.log()` continued to be one of the main debugging tools throughout the project.
 
 ---
 
 ## 🐧 Linux / Ubuntu Track
 
-Linux practice continues alongside the JavaScript project.
+Linux practice continued alongside the JavaScript development track.
 
-Ubuntu is being practiced inside a virtual machine to build familiarity with:
+Ubuntu was practiced inside a virtual machine.
+
+Topics practiced include:
 
 * Terminal commands
 * File and directory management
-* Basic Linux administration
-* Command-line workflow
+* Basic Linux workflow
 
-The long-term goal is to connect Linux skills with **Python and Network Automation**.
+The long-term goal is to connect Linux skills with:
+
+**Python → Automation → Network Automation**
 
 ---
 
-## 🌐 Git & GitHub
+## 🌐 Git & GitHub Track
 
-Git and GitHub are used throughout the project lifecycle.
+Git and GitHub were used throughout the development process.
 
 Typical workflow:
 
@@ -181,72 +238,128 @@ git commit -m "Project 17 update"
 git push
 ```
 
-The project is maintained as part of the **Project Delta-500 GitHub repository**.
+The project is maintained as part of the **Project Delta-500** repository.
 
 ---
 
 ## 🇬🇧 English Track
 
-Technical English practice continues through:
+Technical English practice continued through:
 
-* Reading documentation.
-* Understanding JavaScript terminology.
+* Reading technical documentation.
+* Using English programming terminology.
 * Writing README documentation.
-* Using English names for variables and functions.
 * Writing Git commit messages in English.
+* Using English names for variables and functions.
 
 ---
 
-## 📚 Lessons Learned
+# 📚 Lessons Learned
 
-### 1. UI structure matters
+### 1. Data Types Matter
 
-Changing the navigation structure can significantly improve usability.
+Before writing an algorithm, always check the actual data type being processed.
 
-### 2. Data type awareness is essential
+### 2. Display Data Is Not Always Processing Data
 
-Before writing an algorithm, always check what type of data is actually being processed.
+A human-readable date may not be the correct format for sorting or calculations.
 
-### 3. Display data is not always processing data
+### 3. Reusable Functions Improve Code Quality
 
-A human-readable date may not be the best format for sorting or calculations.
+Repeated logic should be identified and converted into reusable functions.
 
-### 4. Reusable functions improve code quality
-
-Repeated logic should be identified and converted into reusable functions whenever possible.
-
-### 5. Debugging should be systematic
+### 4. Debugging Should Be Systematic
 
 Instead of guessing, inspect the actual program output and follow the data through the application.
 
-### 6. Console debugging is valuable
+### 5. `console.log()` Is a Powerful Debugging Tool
 
-`console.log()` remains a simple but powerful tool for understanding what the application is actually doing.
+It can quickly reveal what the application is actually doing.
 
-### 7. UI and logic should work together
+### 6. UI Structure Matters
 
-A good application requires both functional JavaScript logic and a clear user interface.
+Changing the navigation structure can significantly improve usability.
+
+### 7. Code Optimization Is More Than Reducing Code Size
+
+Good optimization should improve readability, maintainability, and reusability.
+
+### 8. Features Can Affect Other Parts of the Application
+
+Changing the structure of one feature may require changes in other parts of the application.
+
+### 9. Build Step by Step
+
+Implementing and testing features one at a time makes debugging easier and reduces the complexity of problems.
 
 ---
 
-## 🚀 Project Status
+## 🏆 Skills Improved
 
-**Project 17 – Expense Tracker**
+Through Project 17, the following skills were strengthened:
 
-Status: **Completed / In Progress**
+* JavaScript
+* DOM Manipulation
+* CRUD
+* LocalStorage
+* Array Methods
+* Data Processing
+* Form Validation
+* Date Handling
+* UI Design
+* Code Reuse
+* Debugging
+* Git & GitHub
+* Linux / Ubuntu
+* Technical English
 
-Part of:
+---
 
-**Project Delta-500**
+## 📁 Project Structure
 
-Learning Path:
+```text
+Project-17/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
 
-`JavaScript → Linux → Git/GitHub → Python → Network Automation`
+---
+
+## 🛠️ Technologies
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* LocalStorage API
+* Git
+* GitHub
+* VS Code
+* Ubuntu / Linux
+
+---
+
+## 📌 Project Status
+
+✅ **Completed**
+
+---
+
+## 🚀 Next Step
+
+Project 17 completes another major step in the **Project Delta-500** learning roadmap.
+
+The next stage will focus on increasing JavaScript complexity and gradually moving toward:
+
+**Advanced JavaScript → React → Python → Linux → Network Automation**
 
 ---
 
 ## 👨‍💻 Author
 
-Project developed as part of the **Project Delta-500 personal learning roadmap**.
+**Network Engineer**
+**M.Sc. in Networking**
 
-The main objective is to gradually build practical development and automation skills and eventually use them for **remote freelance work and real-world projects**.
+**Project Delta-500**
