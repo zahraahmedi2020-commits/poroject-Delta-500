@@ -4,7 +4,6 @@ let editindex=-1;
 function empty(){
   if(Trackers.length==0){
     alert("not exist Transaction ");
-    mainmenu();
   }
 }
 
@@ -13,57 +12,39 @@ function addt(){
   document.getElementById("dedit").style.display="none";
   document.getElementById("dshow").style.display="none";
   document.getElementById("update").style.display="none";
+  document.getElementById("save").style.display="block";
   document.getElementById("inputt").innerText=" ";
   document.getElementById("inputam").innerText=" ";
 
 }
-function getcurrentDate(){return new Date().toLocaleString();}
+function getDate(inputd){return new Date(inputd).toLocaleString();}
 function savet(){ 
+  let title=document.getElementById("inputt");
+  let am=document.getElementById("inputam");
+  let type=document.getElementById("type");
+  let inputd=document.getElementById("inputD");
   let id= 1;
   if(Trackers.length>0){
-    id=Math.max(...Trackers.map(item=>item.IdT))+1;
-   let title=document.getElementById("inputt");
-   let am=document.getElementById("inputam");
-   let type=document.getElementById("type");
-   let inputd=document.getElementById("inputD");
-    if(am.value<0){
-          alert("Amount Not Could Negetive");
-         return;
-     }else if(title.value.trim()==""){
-          alert("Title is required");
-         return;
-     }else{
-       let Transaction={IdT:id,title:title.value,amount:am.value,
-        type:type.value,
-        Date:getcurrentDate(),Datesort:new Date().getTime()};
-       Trackers.push(Transaction);
-       localStorage.setItem("Trackers",JSON.stringify(Trackers));
-       alert("successfuly Transaction");
-       title.value=" ";
-       am.value=" ";
-      console.log(Transaction);}
-  }else{
-   let title=document.getElementById("inputt");
-   let am=document.getElementById("inputam");
-   let type=document.getElementById("type");
-   let inputd=document.getElementById("inputD");
-    if(am.value<0){
-          alert("Amount Not Could Negetive");
-         return;
-     }else{
-     
-       let Transaction={IdT:id,title:title.value,amount:am.value,
-        type:type.value,
-        Date:getcurrentDate(),Datesort:new Date().getTime()};
-       Trackers.push(Transaction);
-       localStorage.setItem("Trackers",JSON.stringify(Trackers));
-       alert("successfuly Transaction");
-       title.value=" ";
-       am.value=" ";
-       console.log(Transaction);}
-       }
-       showt();
-}
+    id=Math.max(...Trackers.map(item=>item.IdT))+1;   
+  }else{id=1;}
+   console.log(inputd.value);
+   if(am.value<0){
+    alert("Amount Not Could Negetive");
+    return;
+    }else if(title.value.trim()==""){
+      alert("Title is required");
+      return;
+    }else{
+     let Transaction={IdT:id,title:title.value,amount:am.value,type:type.value,
+     Date:getDate(inputd.value),Datesort:new Date(inputd.value).getTime()};
+     Trackers.push(Transaction);
+     localStorage.setItem("Trackers",JSON.stringify(Trackers));
+     alert("successfuly Transaction");
+     title.value=" ";
+     am.value=0;
+     console.log(Transaction);}
+     showt();
+    }
 
 function editt(){
   document.getElementById("dedit").style.display="block";
@@ -77,11 +58,20 @@ function editt(){
 
 
 }
+function outputDateDisplay(date){
+  let datee=new Date(date);
+  let manth=datee.getMonth()+1
+  manth=manth.toString().padStart(2,"0");
+ let outputdate=datee.getFullYear()+"-"+ manth +"-"+datee.getDate().toString().padStart(2,"0");
+ console.log("date edit:"+ outputdate);
+ return outputdate;
+}
 function findeditt(){
   let ide=Number(document.getElementById("eidt").value); 
   let tinput=document.getElementById("inputt");
   let aminput=document.getElementById("inputam");
   let typeinput=document.getElementById("type");
+  let inputd=document.getElementById("inputD");
   empty();
  
   let found=false;
@@ -96,7 +86,8 @@ function findeditt(){
       tinput.value= Trackers[editindex].title;
       aminput.value= Trackers[editindex].amount;
       typeinput.value=Trackers[editindex].type;
-      
+      inputd.value= outputDateDisplay(Trackers[editindex].Datesort);
+      console.log(Trackers[i].Datesort+"input date:"+outputDateDisplay(Trackers[editindex].Datesort));
       console.log(Trackers[i]);
       found=true;}
     }if(!found)alert("not found Transaction whtih this ID .");
@@ -105,7 +96,9 @@ function findeditt(){
 function updateedit(editindex){
  let tinput=document.getElementById("inputt");
  let aminput=document.getElementById("inputam");
- let typeinput=document.getElementById("type");
+ let typeinput=document.getElementById("type"); 
+ let inputd=document.getElementById("inputD");
+
   if(aminput.value<0){
           alert("Amount Not Could Negetive");
          return;
@@ -116,6 +109,8 @@ function updateedit(editindex){
  Trackers[editindex].title=tinput.value;
  Trackers[editindex].amount=aminput.value;
  Trackers[editindex].type=typeinput.value;
+ Trackers[editindex].Date=getDate(inputd.value);
+ Trackers[editindex].Datesort=new Date(inputd.value).getTime();
  localStorage.setItem("Trackers",JSON.stringify(Trackers));
  alert("susseccfully update Trackers");
  document.getElementById("dadd").style.display="none";
@@ -138,117 +133,6 @@ function createheader(table){
     hrow.appendChild(th);}
     table.appendChild(hrow); 
   }
-
-function createRow(table){
-  for(let i=0;i<Trackers.length;i++){
-    let hrow=document.createElement("tr");
-    let th1=document.createElement("th");
-    th1.innerHTML+=Trackers[i].IdT;
-    hrow.appendChild(th1);
-    let th2=document.createElement("th");
-    th2.innerHTML+=Trackers[i].title;
-    hrow.appendChild(th2);
-    let th3=document.createElement("th");
-    th3.innerHTML+=Trackers[i].amount;
-    hrow.appendChild(th3);
-    let th4=document.createElement("th");
-    th4.innerHTML+=Trackers[i].type;
-    hrow.appendChild(th4);
-    let th5=document.createElement("th");
-    th5.innerHTML+=Trackers[i].Date;
-    hrow.appendChild(th5);
-    let th6=document.createElement("th");
-     let newBD = document.createElement('button'); 
-    newBD.innerHTML='Delete'; 
-    th6.appendChild(newBD);
-    newBD.onclick=function(){
-                    if(confirm("Are you sure you went to delete this transcation?")){
-                    document.getElementById("eidt").value=Trackers[i].IdT;
-                    finddeletet();
-                    table.removeChild(hrow);}};
-    let newBe = document.createElement('button'); 
-    newBe.innerHTML='Edit'; 
-    th6.appendChild(newBe);
-    newBe.onclick=function(){
-      document.getElementById("eidt").value=Trackers[i].IdT; 
-      findeditt();};
-    hrow.appendChild(th6);
-    table.appendChild(hrow);}
-}
-function appendTable(table){
-  let r=document.getElementById("rshow");
-  r.appendChild(table);
-}
-
-function showt(){
- document.getElementById("dshow").style.display="block"; 
- document.getElementById("dadd").style.display="none";
- document.getElementById("dedit").style.display="none";
- document.getElementById("dsearch").style.display="none"; 
- document.getElementById("dadd").style.display="none"; 
- document.getElementById("rshow").innerHTML="";
- document.getElementById("CounterT").innerHTML=Number(Trackers.length);
- summary();
- empty();
-  let table=createtable();
-   createheader(table);
-   createRow(table);
-   appendTable(table);
-  
-}
-function summary(){
-  let SumI=0;
-  let SumE=0;
-   for(i=0;i<Trackers.length;i++){
-    if(Trackers[i].type=="income"){
-     SumI=SumI+Number(Trackers[i].amount);
-    }else if(Trackers[i].type=="expense"){
-    SumE=SumE+Number(Trackers[i].amount);
-    }
-   } console.log("in:",SumI,"ex:",SumE);
-   let Balance=SumI-SumE;
-   document.getElementById("TotalIn").innerHTML=SumI;
-   document.getElementById("TotalEx").innerHTML=SumE;
-   if(Balance>0){
-  document.getElementById("Balance").style.color="green";
-}else {document.getElementById("Balance").style.color="red"; }
-   document.getElementById("Balance").innerHTML=Balance;
-}
-function searcht(type){
-  document.getElementById("dsearch").style.display="block";
- if(type=="1"){
-    document.getElementById("headingshow").innerHTML="Search by ID";
-   }else if(type=="2"){
-    document.getElementById("headingshow").innerHTML="Search by Title";
- }
-}
-
-function searchTran(currenttype,value){ 
-    document.getElementById("rshow").innerHTML=" ";
-    console.log({type:currenttype,value:value}); 
- if(currenttype=="1"){   
-  if(Trackers.find(item=>item.IdT==value)){
-    let list=Trackers.find(item=>item.IdT==value);
-    TableFilter([list]);
-   console.log("list:",list);
-  }else alert("not found Transcation");
-    }else if(currenttype=="2"){
-      list= Trackers.filter(item=>item.title.toLowerCase()==value.toLowerCase());
-      TableFilter(list);
-      console.log("filter title",list);
-    }
-}
-function sortt(type){
-  document.getElementById("dsearch").style.display="none";
- if(type==1){
-         Trackers.sort((a,b)=>a.amount-b.amount);
-   }else if(type==2){
-      Trackers.sort((a,b)=>a.Datesort-b.Datesort);
-   }else if(type==3){
-       Trackers.sort((a,b)=>b.Datesort-a.Datesort);
-   }
- showt();
-}
  function creatrowlist(list,table){
 
   for(let i=0;i<list.length;i++){
@@ -256,6 +140,7 @@ function sortt(type){
     let th1=document.createElement("th");
     th1.innerHTML+=list[i].IdT;
     hrow.appendChild(th1);
+    if(list[i].type=="income"){hrow.classList.add("bgrowincome");}else if(list[i].type=="expense"){hrow.classList.add("bgrowexpense");}
     let th2=document.createElement("th");
     th2.innerHTML+=list[i].title;
     hrow.appendChild(th2);
@@ -284,7 +169,13 @@ function sortt(type){
       document.getElementById("eidt").value=list[i].IdT; 
       findeditt();};
     hrow.appendChild(th6);
+    
     table.appendChild(hrow);}
+}
+
+function appendTable(table){
+  let r=document.getElementById("rshow");
+  r.appendChild(table);
 }
 function TableFilter(list){
  let table1=createtable();
@@ -292,6 +183,76 @@ function TableFilter(list){
   creatrowlist(list,table1);
   appendTable(table1);
 }
+function showt(){
+ document.getElementById("dshow").style.display="block"; 
+ document.getElementById("dadd").style.display="none";
+ document.getElementById("dedit").style.display="none";
+ document.getElementById("dsearch").style.display="none"; 
+ document.getElementById("dadd").style.display="none"; 
+ document.getElementById("rshow").innerHTML="";
+ document.getElementById("CounterT").innerHTML=Number(Trackers.length);
+ summary();
+ empty();
+  TableFilter(Trackers);
+  
+}
+function summary(){
+  let SumI=0;
+  let SumE=0;
+   for(i=0;i<Trackers.length;i++){
+    if(Trackers[i].type=="income"){
+     SumI=SumI+Number(Trackers[i].amount);
+    }else if(Trackers[i].type=="expense"){
+    SumE=SumE+Number(Trackers[i].amount);
+    }
+   } console.log("in:",SumI,"ex:",SumE);
+   let Balance=SumI-SumE;
+   document.getElementById("TotalIn").innerHTML=SumI;
+   document.getElementById("TotalEx").innerHTML=SumE;
+   if(Balance>0){
+  document.getElementById("Balance").style.color="green";
+}else {document.getElementById("Balance").style.color="red"; }
+   document.getElementById("Balance").innerHTML=Balance;
+}
+function searcht(type){
+   document.getElementById('inputtype').innerHTML=" ";
+  document.getElementById("dsearch").style.display="block";
+ if(type=="1"){
+    document.getElementById("headingshow").innerHTML="Search by ID";
+   }else if(type=="2"){
+    document.getElementById("headingshow").innerHTML="Search by Title";
+ }
+}
+
+function searchTran(currenttype,value){ 
+    document.getElementById("rshow").innerHTML=" ";
+   
+    console.log({type:currenttype,value:value}); 
+ if(currenttype=="1"){   
+  if(Trackers.find(item=>item.IdT==value)){
+    let list=Trackers.find(item=>item.IdT==value);
+    TableFilter([list]);
+   console.log("list:",list);
+  }else alert("not found Transcation");
+    }else if(currenttype=="2"){
+      let t=value.toLowerCase();
+     list= Trackers.filter(item=>item.title.toLowerCase()==t);
+     TableFilter(list);
+     console.log("title transcation",list);  
+    }
+}
+function sortt(type){
+  document.getElementById("dsearch").style.display="none";
+ if(type==1){
+         Trackers.sort((a,b)=>a.amount-b.amount);
+   }else if(type==2){
+      Trackers.sort((a,b)=>a.Datesort-b.Datesort);
+   }else if(type==3){
+       Trackers.sort((a,b)=>b.Datesort-a.Datesort);
+   }
+ showt();
+}
+
 function filtert(type){
   document.getElementById("dsearch").style.display="none";
   document.getElementById("rshow").innerHTML=" ";
